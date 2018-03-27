@@ -39,11 +39,11 @@ completion of track composition and MIDI-mapping, practice the performance, and 
 
 **Visual Tests:**
 [RawGit](https://cdn.rawgit.com/L4COUR/Aesthetic_Programming_2018/48059895/Mini_Ex4/Source/index.html)
-- 01_VizTest_VOX https://vimeo.com/224376875
+- [01_VizTest_VOX](https://vimeo.com/224376875)
 
-- 02_VizTest_Setup https://vimeo.com/224376893
+- [02_VizTest_Setup](https://vimeo.com/224376893)
 
-- 03_VizTest_Audio_performance https://vimeo.com/256399545
+- [03_VizTest_Audio_performance](https://vimeo.com/256399545)
 
 **Sources:**
 
