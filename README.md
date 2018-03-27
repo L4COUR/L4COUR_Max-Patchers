@@ -47,7 +47,7 @@ completion of track composition and MIDI-mapping, practice the performance, and 
 
 **Sources:**
 
-- http://audiovisualacademy.com/avin/en/software/maxmspjitter-masato-tsutsui-audio-part-2/
+- [AVIN_Masato_Tsuitsui's tutorials](http://audiovisualacademy.com/avin/en/software/maxmspjitter-masato-tsutsui-audio-part-2/)
 
 - https://www.youtube.com/watch?v=m-mASNRjRHg
 
