@@ -1,13 +1,9 @@
 # Max4Live-Jitter-Visualizer-patch
-In this project my goal was to do a live performance without the use of presets from Ableton’s core lib
+This project was a part of my semester at Engelsholm's electronic music course, which i attended in the fall 2016. The idea was to do a live performance without the use of presets from Ableton’s core library or any other form of plugin VST’s. Instead I wanted use the technics and methods I had learned in relation to: composing, sound-design and mixing. Another element I researched during the project, was how to program a Max patch, containing jitter elements with OpenGL, which would be used as a visual representation of the live sound. The live performance along with the visual programming, would in turn give the audience a 1:1 experience between the interaktion between the performer, MIDI-controllers and the sound conjoured from these interactions would then be represented with the jitter audio-visuals patch.
 
-rary or any sort of VST’s. Instead i wanted to see, what I could achieve with the technics and methods I have learned from Engelsholm Højskole regarding: composing, sound-design and mixing. Another element i research, during this project, was how to program a Max patch, more specifically jitter elements, with OpenGL, as a visual representation of sound. The live perfo
+**Vision:** 
 
-rmance would what as a result of the visual programming give the audience a 1:1 experience, between my interaktion with the MIDI-controllers in relation to sound and visuals.
-
-Vision: “A live performance with the Push controller, of a minimalistic character, and visuals that reacts accordingly to live sound, in a black and white format. Live
-
-Performance composed in Ableton live, and audio-visuals programmed in Max for live via jitter and OpenGL.
+A live performance with the Push controller, of a minimalistic character, and visuals that reacts accordingly to live sound, in a black and white format. Live Performance composed in Ableton live, and audio-visuals programmed in Max for live via jitter and OpenGL.
 
 ![alt text](https://github.com/L4COUR/La-Cour_Max4Live-Jitter-Visualizer-patch/blob/master/Max4Live-Jitter-visualizer-patch.jpg "Tech-writer")
 
