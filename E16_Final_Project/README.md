@@ -9,7 +9,7 @@ This project was a part of my semester at Engelsholm's electronic music course, 
 
 A live performance with the Push controller, of a minimalistic character, and visuals that reacts accordingly to live sound, in a black and white format. Live Performance composed in Ableton live, and audio-visuals programmed in Max for live via jitter and OpenGL.
 
-![alt text](https://github.com/L4COUR/La-Cour_Max4Live-Jitter-Visualizer-patch/blob/master/Max4Live-Jitter-visualizer-patch.jpg "Tech-writer")
+![alt text](https://github.com/L4COUR/La-Cour_Max4Live_Max-MSP_Max-Jitter/blob/master/E16_Final_Project/Max4Live-Jitter-visualizer-patch%20(1).jpg "Tech-writer")
 
 **Materials required:**
 
