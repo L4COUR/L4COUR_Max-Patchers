@@ -37,6 +37,9 @@ completion of visual programming, start of track composition and live MIDI-mappi
 **Week 05 – 11:**
 completion of track composition and MIDI-mapping, practice the performance, and trying out the visuals with the projector on the white canvas.
 
+**The Max Patch:**
+
+
 **Visual Tests:**
 
 - [01_VizTest_VOX](https://vimeo.com/224376875)
