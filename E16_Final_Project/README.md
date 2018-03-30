@@ -38,7 +38,7 @@ completion of visual programming, start of track composition and live MIDI-mappi
 completion of track composition and MIDI-mapping, practice the performance, and trying out the visuals with the projector on the white canvas.
 
 **The Max Patch:**
-![alt text](https://github.com/L4COUR/La-Cour_Max4Live-Jitter-Visualizer-patch/blob/master/Screen%20Shot%202018-03-30%20at%2002.08.36.png "Max/MSP Patch")
+![alt text](https://github.com/L4COUR/La-Cour_Max4Live-Jitter-Visualizer-patch/blob/master/E16_Final_Project/Screen%20Shot%202018-03-30%20at%2002.08.36.png "Max/MSP Patch")
 
 ![alt text](https://github.com/L4COUR/La-Cour_Max4Live-Jitter-Visualizer-patch/blob/master/Screen%20Shot%202018-03-30%20at%2001.21.23.png "Max/MSP Patch")
 
