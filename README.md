@@ -1,4 +1,4 @@
-# La-Cour_Max4Live, Max/MSP, Max/Jitter
+# La-Cour_Max-Patchers
 Performance composed in Ableton live, and Audiovisuals programmed in Max for live via jitter and OpenGL.
 
 ### Overview:
