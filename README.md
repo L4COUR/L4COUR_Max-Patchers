@@ -7,5 +7,5 @@ Performance composed in Ableton live, and Audiovisuals programmed in Max for liv
 
 - (02_next_project)
 
-**Tutorials:**
+**Max:Tutorial_patchers:**
 - 01 Hello World
