@@ -1,7 +1,7 @@
 # 01_Max4Live-Jitter-Visualizer-patch
 https://cycling74.com/projects/01_max_audiovisulizer_e16_final_project
 
-<a href="https://www.youtube.com/watch?v=OBivTo-QB5A&feature=youtu.be" target="This is a Youtube video"><img src="https://github.com/L4COUR/La-Cour_Max-Patchers/blob/master/01_Max4Live-Jitter-Visualizer-patch/Screen%20Shot%202018-03-27%20at%2003.37.38.png" 
+<a href="https://www.youtube.com/watch?v=OBivTo-QB5A&feature=youtu.be" target="This is a Youtube video"><img src="https://github.com/L4COUR/L4COUR_Max-Patchers/blob/master/Max%20Projects/01_Max4Live-Jitter-Visualizer-patch/Screen%20Shot%202018-03-27%20at%2003.37.38.png" 
 alt="Youtube video"/></a>
 
 This project was a part of my semester at Engelsholm's electronic music course, which i attended in the fall 2016. The idea was to do a live performance without the use of presets from Ableton’s core library or any other form of plugin VST’s. Instead I wanted use the technics and methods I had learned in relation to: composing, sound-design and mixing. Another element I researched during the project, was how to program a Max patch, containing jitter elements with OpenGL, which would be used as a visual representation of the live sound. The live performance along with the visual programming, would in turn give the audience a 1:1 experience between the interaktion between the performer, MIDI-controllers and the sound conjoured from these interactions would then be represented with the jitter audio-visuals patch.
@@ -10,7 +10,7 @@ This project was a part of my semester at Engelsholm's electronic music course, 
 
 A live performance with the Push controller, of a minimalistic character, and visuals that reacts accordingly to live sound, in a black and white format. Live Performance composed in Ableton live, and audio-visuals programmed in Max for live via jitter and OpenGL.
 
-![alt text](https://github.com/L4COUR/La-Cour_Max-Patchers/blob/master/01_Max4Live-Jitter-Visualizer-patch/Max4Live-Jitter-visualizer-patch%20(1).jpg "Tech-writer")
+![alt text](https://github.com/L4COUR/L4COUR_Max-Patchers/blob/master/Max%20Projects/01_Max4Live-Jitter-Visualizer-patch/Max4Live-Jitter-visualizer-patch%20(1).jpg "Tech-writer")
 
 **Materials required:**
 
@@ -39,9 +39,9 @@ completion of visual programming, start of track composition and live MIDI-mappi
 completion of track composition and MIDI-mapping, practice the performance, and trying out the visuals with the projector on the white canvas.
 
 **The Max Patch:**
-![alt text](https://github.com/L4COUR/La-Cour_Max-Patchers/blob/master/01_Max4Live-Jitter-Visualizer-patch/Screen%20Shot%202018-03-30%20at%2002.08.36.png "Max/MSP Patch")
+![alt text](https://github.com/L4COUR/L4COUR_Max-Patchers/blob/master/Max%20Projects/01_Max4Live-Jitter-Visualizer-patch/Screen%20Shot%202018-03-30%20at%2002.08.36.png "Max/MSP Patch")
 
-![alt text](https://github.com/L4COUR/La-Cour_Max-Patchers/blob/master/01_Max4Live-Jitter-Visualizer-patch/Screen%20Shot%202018-03-30%20at%2001.21.23.png "Max/MSP Patch")
+![alt text](https://github.com/L4COUR/L4COUR_Max-Patchers/blob/master/Max%20Projects/01_Max4Live-Jitter-Visualizer-patch/Screen%20Shot%202018-03-30%20at%2001.21.23.png "Max/MSP Patch")
 
 **Visual Tests:**
 
