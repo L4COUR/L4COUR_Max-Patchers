@@ -5,4 +5,4 @@ Performance composed in Ableton live, and Audiovisuals programmed in Max for liv
 - 16052019_buffer~patch.maxpat
 
 ### [Max Projects](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects):
-- 01_Max_Audiovisulizer_E16_Final_Project
+- [01_Max_Audiovisulizer_E16_Final_Project](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects/01_Max4Live-Jitter-Visualizer-patch)
