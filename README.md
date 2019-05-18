@@ -7,3 +7,5 @@ This repository is split into two sub sections. The Max Archive acts as a folder
 
 ### [Max Projects](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects):
 - [01_Max_Audiovisulizer_E16_Final_Project](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects/01_Max4Live-Jitter-Visualizer-patch)
+
+- [02_Max8-LC_WorkSpace](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects/02_Max8-LC_WorkSpace)
