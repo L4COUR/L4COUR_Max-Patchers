@@ -4,8 +4,3 @@ Performance composed in Ableton live, and Audiovisuals programmed in Max for liv
 ### Overview:
 **Project:**
 - 01_Max_Audiovisulizer_E16_Final_Project
-
-- (02_next_project)
-
-**Max:Tutorial_patchers:**
-- 01_Max_Hello world.amxd
