@@ -19,13 +19,13 @@ month[10] = "11";
 month[11] = "12";
 var m = month[today.getMonth()];
 
-async function remove() {
+async function reName() {
   fs.renameSync('recording.aif', newPath + m + today.getDate() + today.getFullYear() + '_' + 'renamedRec.aif');
 }
 
-maxApi.addHandler('rename', () => {
-  remove();
-  maxApi.post("Renaming Complete");
+maxApi.addHandler('text', (dir) => {
+  reName();
+  maxApi.post("Renaming complete ${dir}");
 });
 
 
