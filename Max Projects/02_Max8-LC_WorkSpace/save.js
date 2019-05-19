@@ -1,6 +1,7 @@
 const maxApi = require('max-api');
 var fs = require('fs');
 
+const oldPath = "recording.aif";
 const newPath = "/Users/Pacour/Documents/Ableton Stuff/Max8 - Recordings/";
 
 let today = new Date();
@@ -19,13 +20,17 @@ month[10] = "11";
 month[11] = "12";
 var m = month[today.getMonth()];
 
-async function reName() {
-  fs.renameSync('recording.aif', newPath + m + today.getDate() + today.getFullYear() + '_' + 'renamedRec.aif');
+async function reName(dir) {
+  fs.renameSync('recording.aif', newPath + m + today.getDate() + today.getFullYear() + '_' + dir + '.aif');
 }
 
-maxApi.addHandler('text', (dir) => {
-  reName();
-  maxApi.post("Renaming complete ${dir}");
+maxApi.addHandler('symbol', (dir) => {
+  //fs.renameSync('recording.aif', newPath + m + today.getDate() + today.getFullYear() + '_' + dir + '.aif');
+  if (oldPath === null) {
+    maxApi.post('no current file');
+  } else {
+    reName(dir);
+  }
 });
 
 
