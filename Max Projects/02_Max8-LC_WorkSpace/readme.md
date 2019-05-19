@@ -14,7 +14,7 @@ sfrecord~ object
 
 I made it more convinient to use the sfrecord~ object, in terms of storing and organizing sound-files in specified local directories on my machine. I utilized the Node for Max framework that was integrated into the Max 8 software, in concert with the File-System node package. The reason for adding this feature was to make it more convinient for me to use the sfrecord~ object and keep my sound files organized by date in a folder that is easily accessable from within Ableton Live. Moreover, it was a pretty good excuse to work with Node for Max and really get more into using Javascript inside the Max-environment.
 
-```
+``` javascript
 const maxApi = require('max-api'); // Enables communication with Max/MSP
 var fs = require('fs');            // Node package File System
 
