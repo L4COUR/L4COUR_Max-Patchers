@@ -52,3 +52,9 @@ maxApi.addHandler('symbol', (newName) => {
 });
 ```
 
+## sources:
+- [Node for Max: Getting Started](https://www.youtube.com/watch?v=QuIcEHJSwz8)
+- [Delicious Max 8 Tutorial 2: Node for Max](https://www.youtube.com/watch?v=RR5AlDgYI2s)
+- [Learn nodejs, Renaming and removing files](https://www.youtube.com/watch?v=z5PmB_NWlgQ&t=196s)
+- [Node.js Reference](https://nodejs.org/api/fs.html#fs_fs_renamesync_oldpath_newpath)
+
