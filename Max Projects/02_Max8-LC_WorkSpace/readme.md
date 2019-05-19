@@ -52,6 +52,8 @@ maxApi.addHandler('symbol', (newName) => {
 });
 ```
 
+Using the sfrecord~ in conjunction with this node.script save.js, makes it easy to name and store audio files, made within the LC_WorkSpace, in folders that are easily accesible from the Ableton Live environment. The seamless transitioning from the experimental and abstract DSP sound design environment of Max/MSP, and into the familiar tools of Ableton Live, provides a very rigourous engagement with the material. I find that being able to really dive into the extreme complexity of seamless DSP between sound, video, images and other types of media, and combine these in order to create new and interesting media only to then further transform the aesthetic qualities through the means of a DAW, gives the creator an insane amount of malleble control.
+
 ## sources:
 - [Node for Max: Getting Started](https://www.youtube.com/watch?v=QuIcEHJSwz8)
 - [Delicious Max 8 Tutorial 2: Node for Max](https://www.youtube.com/watch?v=RR5AlDgYI2s)
