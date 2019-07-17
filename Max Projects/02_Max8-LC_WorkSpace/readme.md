@@ -56,6 +56,16 @@ Using the sfrecord~ in conjunction with this node.script save.js, makes it easy 
 
 ![](https://github.com/L4COUR/L4COUR_Max-Patchers/blob/master/Max%20Projects/02_Max8-LC_WorkSpace/media/LC_WorkSpace_NodeScript.gif)
 
+## 17-07-19:Update - Adding Snippet functionality
+
+It has now been a couple of weeks since I created this workspace patch. While this patch is great for quickly recording and storing the sounds of a given patch, I found it tedious to constaly upon the same patch up and copy and connect stuff whenever I wanted to work with it in Live. The solution to this seems to be the build-in "snippet"-functionality, which is a great feature that always the user to highlight certain parts of a patch and save it as a snippet that can be dragged into a new patcher. 
+
+In order for this to work with this rather complicated snippet however we need to make the "save.js"-file globally available in Max's directory. Now, I don't know if this is how you are supposed to do it. So, I opened the help-patch for node4max, and found a globally available .js file called maxnode-basics.js. I then located the file to its designated folder inside the max-directory. I then just moved the "save.js" file to this exact location: /Max/Contents/Resources/C74/packages/Node For Max/help
+
+![file path](https://github.com/L4COUR/L4COUR_Max-Patchers/blob/master/Max%20Projects/02_Max8-LC_WorkSpace/media/file-path%20for%20save.js-file.png)
+
+Now I can easily drag in the workspace recorder as a snippet into any patcher at any time that I want it, while having the node script working as it should.
+
 ## sources:
 - [Node for Max: Getting Started](https://www.youtube.com/watch?v=QuIcEHJSwz8)
 - [Delicious Max 8 Tutorial 2: Node for Max](https://www.youtube.com/watch?v=RR5AlDgYI2s)
