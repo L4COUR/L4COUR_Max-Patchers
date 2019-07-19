@@ -76,7 +76,7 @@ Now I can easily drag in the workspace recorder as a snippet into any patcher at
 ![](https://github.com/L4COUR/L4COUR_Max-Patchers/blob/master/Max%20Projects/02_Max8-LC_WorkSpace/media/snippet-for-gifing.gif)
 
 ## Further development
-I think that expanding the archiaval capabilities of the sfrecord~ object in Max/MSP has so far been a success and adding making it function as a snippet makes this even more convinient to work with. the future development of this patch will be removing unnecessary objects and consolidating it in subpatches, as to make it more condensed and easy to fit into an already complicated patch.
+I think that expanding the archival capabilities of the sfrecord~ object in Max/MSP has so far been a success and adding making it function as a snippet makes this even more convinient to work with. the future development of this patch will be removing unnecessary objects and consolidating it in subpatches, as to make it more condensed and easy to fit into an already complicated patch.
 
 I am also speculating in making it into a package, in order to make it even more easy to download and start using it. I do however feel that this should be the absolute last thing to do. I also really want to test how easy it is to use for other people before a make it more available than it already is. 
 
@@ -85,4 +85,5 @@ I am also speculating in making it into a package, in order to make it even more
 - [Delicious Max 8 Tutorial 2: Node for Max](https://www.youtube.com/watch?v=RR5AlDgYI2s)
 - [Learn nodejs, Renaming and removing files](https://www.youtube.com/watch?v=z5PmB_NWlgQ&t=196s)
 - [Node.js Reference](https://nodejs.org/api/fs.html#fs_fs_renamesync_oldpath_newpath)
+- [Max How to make a Package](https://docs.cycling74.com/max7/vignettes/packages)
 
