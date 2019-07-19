@@ -19,7 +19,7 @@ const maxApi = require('max-api'); // Enables communication with Max/MSP
 var fs = require('fs');            // Node package File System
 
 const oldPath = "recording.aif";
-const newPath = "/Users/Pacour/Documents/Ableton Stuff/Max8 - Recordings/";
+const newPath = "[insert your file-path for a specific folder]/Users/Pacour/Documents/Ableton Stuff/Max8 - Recordings/";
 
 // -- Date and Time
 let today = new Date();
