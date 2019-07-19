@@ -15,7 +15,7 @@ sfrecord~ object
 
 2. open the max patch [Max8_LC-WorkSpace.maxpat]
 
-3. create a “snippet” of the Master/Record/MIDI section name it sfrecord_Extended
+3. [create a “snippet”](https://www.youtube.com/watch?v=XmUkaQ_xlu0) of the Master/Record/MIDI section name it sfrecord_Extended
 
 4. place the save.js file within the;
 [/Applications/Max.app/Contents/Resources/C74/packages/Node For Max/help](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects/02_Max8-LC_WorkSpace#17-07-19update---adding-snippet-functionality)
