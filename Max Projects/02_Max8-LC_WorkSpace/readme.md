@@ -10,6 +10,26 @@ sfrecord~ object
 
 3) this final chunk is the main workspace, within which I can conduct experiments with various max-objects in combination with my external gear. Currently this space is partly occupied by some MIDI message experiments, but it could be anything! </br>
 
+## Installation Guide
+1. download the repository
+
+2. open the max patch [Max8_LC-WorkSpace.maxpat]
+
+3. create a “snippet” of the Master/Record/MIDI section name it sfrecord_Extended
+
+4. place the save.js file within the;
+[/Applications/Max.app/Contents/Resources/C74/packages/Node For Max/help](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects/02_Max8-LC_WorkSpace#17-07-19update---adding-snippet-functionality)
+
+5. create a folder for storing your audio recordings from Max, and copy the file-path of this folder
+
+7. lock the patch [cmd/ctrl - e] [Max8_LC-WorkSpace.maxpat] and double click the [node.script save.js @autorstart 1 @watch 1]-object —> opening the .js file
+
+8. Edit line 5: const newPath = “[insert your file path here exp. /document/max-recordings/]“;
+
+9. save and close the file, and exit the patch
+
+10. see if it works
+
 ## Further development
 
 I made it more convinient to use the sfrecord~ object, in terms of storing and organizing sound-files in specified local directories on my machine. I utilized the Node for Max framework that was integrated into the Max 8 software, in concert with the File-System node package. The reason for adding this feature was to make it more convinient for me to use the sfrecord~ object and keep my sound files organized by date in a folder that is easily accessable from within Ableton Live. Moreover, it was a pretty good excuse to work with Node for Max and really get more into using Javascript inside the Max-environment.
