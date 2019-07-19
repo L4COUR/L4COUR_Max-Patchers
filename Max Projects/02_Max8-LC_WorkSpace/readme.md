@@ -64,6 +64,13 @@ In order for this to work with this rather complicated snippet however we need t
 
 ![file path](https://github.com/L4COUR/L4COUR_Max-Patchers/blob/master/Max%20Projects/02_Max8-LC_WorkSpace/media/file-path%20for%20save.js-file.png)
 
+Next in order for the snippet to work, we also need to modify the save.js 
+
+~~const oldPath = "recording.aif";~~
+``` javascript
+const oldPath = "/Applications/Max.app/Contents/Resources/C74/packages/Node For Max/help/recording.aif";
+```
+
 Now I can easily drag in the workspace recorder as a snippet into any patcher at any time that I want it, while having the node script working as it should.
 
 ## sources:
