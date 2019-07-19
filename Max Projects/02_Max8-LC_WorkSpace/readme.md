@@ -73,6 +73,8 @@ const oldPath = "/Applications/Max.app/Contents/Resources/C74/packages/Node For 
 
 Now I can easily drag in the workspace recorder as a snippet into any patcher at any time that I want it, while having the node script working as it should.
 
+![](https://github.com/L4COUR/L4COUR_Max-Patchers/blob/master/Max%20Projects/02_Max8-LC_WorkSpace/media/snippet-for-gifing.gif)
+
 ## sources:
 - [Node for Max: Getting Started](https://www.youtube.com/watch?v=QuIcEHJSwz8)
 - [Delicious Max 8 Tutorial 2: Node for Max](https://www.youtube.com/watch?v=RR5AlDgYI2s)
