@@ -30,7 +30,7 @@ sfrecord~ object
 
 10. see if it works
 
-## Further development
+## Notes: Further development
 
 I made it more convinient to use the sfrecord~ object, in terms of storing and organizing sound-files in specified local directories on my machine. I utilized the Node for Max framework that was integrated into the Max 8 software, in concert with the File-System node package. The reason for adding this feature was to make it more convinient for me to use the sfrecord~ object and keep my sound files organized by date in a folder that is easily accessable from within Ableton Live. Moreover, it was a pretty good excuse to work with Node for Max and really get more into using Javascript inside the Max-environment.
 
@@ -95,12 +95,12 @@ Now I can easily drag in the workspace recorder as a snippet into any patcher at
 
 ![](https://github.com/L4COUR/L4COUR_Max-Patchers/blob/master/Max%20Projects/02_Max8-LC_WorkSpace/media/snippet-for-gifing.gif)
 
-## Further development
+## Notes: Further development
 I think that expanding the archival capabilities of the sfrecord~ object in Max/MSP has so far been a success and adding making it function as a snippet makes this even more convinient to work with. the future development of this patch will be removing unnecessary objects and consolidating it in subpatches, as to make it more condensed and easy to fit into an already complicated patch.
 
 I am also speculating in making it into a package, in order to make it even more easy to download and start using it. I do however feel that this should be the absolute last thing to do. I also really want to test how easy it is to use for other people before a make it more available than it already is. 
 
-## sources:
+## Sources:
 - [Node for Max: Getting Started](https://www.youtube.com/watch?v=QuIcEHJSwz8)
 - [Delicious Max 8 Tutorial 2: Node for Max](https://www.youtube.com/watch?v=RR5AlDgYI2s)
 - [Learn nodejs, Renaming and removing files](https://www.youtube.com/watch?v=z5PmB_NWlgQ&t=196s)
