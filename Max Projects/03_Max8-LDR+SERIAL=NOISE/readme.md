@@ -22,9 +22,15 @@ void loop() {
 } 
 ```
 
-![Schematic](./media/Schematic.png)
+<img src="./media/Schematic.png" alt="Schematic" style="zoom: 67%;" />
 
+## Thougts
 
+before I made this small little projekt I thought that the only way that arduino and Max/MSP could communicate with each other was via firmata, however as this little project illustrates it is indeed possible to communicate between the two with just serial data.
+
+Using the LDR to control parameters in max/MSP is quite an interesting form of interaction, there is a sense of power when using gestures instead of knobs that is kind of unique. however, as it is also mentioned in the description, even though it is a cool way to control certain aspects, it is also a very noisy and uncertain way.
+
+So if we can control parameters in max via a LDR(Arduino --Serial--> Max/MSP), is it then also possible to send data from Max/MSP to control if an LED is Lit (Max/MSP --Serial--> Arduino)?
 
 
 ## Sources:
