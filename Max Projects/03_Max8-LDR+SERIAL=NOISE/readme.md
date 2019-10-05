@@ -26,8 +26,6 @@ void loop() {
 
 
 
-## Max-Patcher
-![Max Patcher](./media/Max Patcher.png)
 
 ## Sources:
 - https://www.youtube.com/watch?v=6bT3G4Mep7E&t=551s
