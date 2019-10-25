@@ -1,6 +1,6 @@
 # Max8: Arduino + PIR sensor
 
-<img src="/Users/Pacour/Developer/L4COUR_Max-Patchers/Max Projects/04_Max8 - Arduino + PIRsensor/media/04_Max8 - Arduino + PIRsensor.png" style="zoom:50%;" />
+<img src="./media/04_Max8 - Arduino + PIRsensor.png" style="zoom:50%;" />
 
 ## Arduino Code
 
