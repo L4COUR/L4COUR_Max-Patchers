@@ -12,5 +12,9 @@ This repository is split into two sub sections. The Max Archive acts as a folder
 - [02_Max8-LC_WorkSpace](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects/02_Max8%20-%20LC_WorkSpace)
 ![](https://github.com/L4COUR/L4COUR_Max-Patchers/blob/master/Max%20Projects/02_Max8-LC_WorkSpace/media/LC_WorkSpace_NodeScript.gif)
 
-- [03_Max8 LDR+SERIAL=NOISE](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects/03_Max8-LDR%2BSERIAL%3DNOISE)
+- [03_Max8 LDR+SERIAL=NOISE](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects/03_Max8%20-%20LDR%2BSERIAL%3DNOISE)
 ![](https://github.com/L4COUR/L4COUR_Max-Patchers/blob/master/Max%20Projects/03_Max8-LDR%2BSERIAL%3DNOISE/media/LDR+SERIAL-NOISE-VID.gif)
+
+- [04_Max8 Arduino + PIR sensor](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects/04_Max8%20-%20Arduino%20%2B%20PIRsensor)
+
+- [05_Max8 Adafruit AMG8833 Thermal Camera Jitter Heatmap](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects/05_Max8%20-%20Adafruit%20AMG8833%20Thermal%20Camera%20Heatmap%20Jitter)
