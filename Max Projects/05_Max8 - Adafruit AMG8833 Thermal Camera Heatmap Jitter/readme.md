@@ -1,50 +1,76 @@
-# Max8: Arduino + PIR sensor
+# Max8: Adafruit AMG8833 Thermal Camera Heatmap Jitter
 
-<img src="./media/04_Max8 - Arduino + PIRsensor.png" style="zoom:50%;" />
+
 
 ## Arduino Code
 
 ``` c
-/*
- * PIR sensor tester
- */
+/***************************************************************************
+  This is a library for the AMG88xx GridEYE 8x8 IR camera
 
-int ledPin = 13;                // choose the pin for the LED
-int inputPin = 2;               // choose the input pin (for PIR sensor)
-int pirState = LOW;             // we start, assuming no motion detected
-int val = 0;                    // variable for reading the pin status
+  This sketch tries to read the pixels from the sensor
+
+  Designed specifically to work with the Adafruit AMG88 breakout
+  ----> http://www.adafruit.com/products/3538
+
+  These sensors use I2C to communicate. The device's I2C address is 0x69
+
+  Adafruit invests time and resources providing this open source code,
+  please support Adafruit andopen-source hardware by purchasing products
+  from Adafruit!
+
+  Written by Dean Miller for Adafruit Industries.
+  BSD license, all text above must be included in any redistribution
+ ***************************************************************************/
+
+#include <Wire.h>
+#include <Adafruit_AMG88xx.h>
+
+Adafruit_AMG88xx amg;
+
+float pixels[AMG88xx_PIXEL_ARRAY_SIZE];
 
 void setup() {
-  pinMode(ledPin, OUTPUT);      // declare LED as output
-  pinMode(inputPin, INPUT);     // declare sensor as input
+    Serial.begin(9600);
+    Serial.println(F("AMG88xx pixels"));
 
-  Serial.begin(9600);
+    bool status;
+    
+    // default settings
+    status = amg.begin();
+    if (!status) {
+        Serial.println("Could not find a valid AMG88xx sensor, check wiring!");
+        while (1);
+    }
+    
+    Serial.println("-- Pixels Test --");
+
+    Serial.println();
+
+    delay(100); // let sensor boot up
 }
 
-void loop(){
-  val = digitalRead(inputPin);  // read input value
-  if (val == HIGH) {            // check if the input is HIGH
-    digitalWrite(ledPin, HIGH);  // turn LED ON
-    if (pirState == LOW) {
-      // we have just turned on
-      Serial.println("On");
 
-      // We only want to print on the output change, not state
-      pirState = HIGH;
-    }
-  } else {
-    digitalWrite(ledPin, LOW); // turn LED OFF
-    if (pirState == HIGH){
-      // we have just turned of
-      Serial.println("Off");
+void loop() { 
+    //read all the pixels
+    amg.readPixels(pixels);
 
-      // We only want to print on the output change, not state
-      pirState = LOW;
+    Serial.print("[");
+    for(int i=1; i<=AMG88xx_PIXEL_ARRAY_SIZE; i++){
+      Serial.print(pixels[i-1]);
+      Serial.print(", ");
+      if( i%8 == 0 ) Serial.println();
     }
-  }
+    Serial.println("]");
+    Serial.println();
+
+    //delay a second
+    delay(100);
 }
 ```
 
 
 ## Sources:
-- https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/using-a-pir-w-arduino
+- https://github.com/DDlabAU/thermal-camera-heatmap
+- https://cdn-learn.adafruit.com/downloads/pdf/adafruit-amg8833-8x8-thermal-camera-sensor.pdf
+- http://www.electroschematics.com/wp-content/uploads/2013/01/Arduino-Uno-R3-Pinouts.png
