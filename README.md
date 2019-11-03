@@ -20,3 +20,4 @@ This repository is split into two sub sections. The Max Archive acts as a folder
 ![](https://github.com/L4COUR/L4COUR_Max-Patchers/raw/master/Max%20Projects/04_Max8%20-%20Arduino%20%2B%20PIRsensor/media/04_Max8%20-%20Arduino%20+%20PIRsensor.png)
 
 - [05_Max8 Adafruit AMG8833 Thermal Camera Jitter Heatmap](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects/05_Max8%20-%20Adafruit%20AMG8833%20Thermal%20Camera%20Heatmap%20Jitter)
+![](https://github.com/L4COUR/L4COUR_Max-Patchers/raw/master/Max%20Projects/05_Max8%20-%20Adafruit%20AMG8833%20Thermal%20Camera%20Heatmap%20Jitter/media/Adafruit%20AMG8833%20Thermal%20camera%20Max-patch%20Jitter.png)
