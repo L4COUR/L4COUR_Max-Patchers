@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 568.0, 78.0, 739.0, 788.0 ],
+		"rect" : [ 539.0, 78.0, 739.0, 788.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,54 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 247.0, 598.0, 194.0, 114.0 ],
+					"text" : "The red and blue planes are assembled into a float32 matrix in an 8 x 8 grid, which is then rotated to the correct position and displaying the heatmap, which is then outputted in a jit.window that can be fullscreened by pressing ESC. "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"linecount" : 9,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 247.0, 391.0, 200.0, 127.0 ],
+					"text" : "Grouping the floating point values as chunks of 8 x 8 = 64 values, outputting this to the blue channel as background colour.\n\nusing the scale object with dynamic minimum and maximum to set a constraint between -1 to 1 and routing this into the red channel."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"linecount" : 16,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 213.0, 135.0, 123.0, 221.0 ],
+					"text" : "Extracting value from the serial monitor and converting it, first from ASCII-code to chunks of 5 symbols\n\n\n\n\n\n\n\n\nand then combining the 5 symbols into floating point values"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 173.5, 53.0, 119.0, 47.0 ],
+					"text" : "Connecting arduino's serial to Max/MSP/Jitter"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "message",
@@ -68,31 +116,20 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 308.0, 754.0, 80.0, 60.0 ]
+					"patching_rect" : [ 32.0, 631.0, 117.0, 84.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-108",
-					"linecount" : 14,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 366.0, 146.0, 318.0, 208.0 ],
-					"text" : "Step by Step guide for use\n\n1) Upload the code to your arduino (DO NOT OPEN THE SERIAL MONITOR IN THE ARDUINO IDE)\n\n2) press the toggle button, and set the serialport to the one you are using in the arduino IDE\n\n3) You should now be able to see that the program is running\n\n4) press ESC to fullscreen the visualizer, and press ESC again to exit fullscreen.\n\n"
-				}
-
-			}
-, 			{
-				"box" : 				{
+					"fontface" : 2,
 					"id" : "obj-102",
 					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 362.0, 13.0, 379.0, 100.0 ],
-					"text" : "Written by Frederik la Cour for Digital Design Lab, Aarhus University\n\nThis code is a way of visualizing heatmeasurements from the Adafruit AMG8833 IR Thermal Camera Breakout Board.\n\nUse this code together with \"pixels_test\"-example, which is a part of the AMG8833's sensor arduino library"
+					"patching_rect" : [ 342.0, 14.0, 379.0, 100.0 ],
+					"text" : "Written by Frederik la Cour for Digital Design Lab, Aarhus University\n\nThis code is a way of visualizing heat-measurements from the Adafruit AMG8833 IR Thermal Camera Breakout Board.\n\nUse this code together with \"pixels_test\"-example, which is a part of the AMG8833's sensor arduino library"
 				}
 
 			}
@@ -104,7 +141,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 32.0, 608.5, 115.0, 35.0 ],
+					"patching_rect" : [ 32.0, 580.0, 115.0, 35.0 ],
 					"text" : "jit.dimmap @map 1 0 @invert 0 1"
 				}
 
@@ -140,7 +177,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 32.0, 468.0, 71.5, 22.0 ],
+					"patching_rect" : [ 32.0, 466.0, 71.5, 22.0 ],
 					"text" : "scale"
 				}
 
@@ -152,8 +189,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.112500000000011, 340.0, 71.375, 22.0 ],
-					"text" : "\"21.25\""
+					"patching_rect" : [ 127.625, 329.0, 71.375, 22.0 ],
+					"text" : "\"22.00\""
 				}
 
 			}
@@ -164,7 +201,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 32.0, 340.0, 86.0, 22.0 ],
+					"patching_rect" : [ 31.512499999999989, 329.0, 86.0, 22.0 ],
 					"text" : "fromsymbol @"
 				}
 
@@ -176,7 +213,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "int", "int", "", "int", "int" ],
-					"patching_rect" : [ 32.0, 280.0, 87.0, 22.0 ],
+					"patching_rect" : [ 31.512499999999989, 265.0, 87.0, 22.0 ],
 					"text" : "unpack i i s i i"
 				}
 
@@ -188,7 +225,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 32.0, 313.0, 169.0, 22.0 ],
+					"patching_rect" : [ 31.512499999999989, 302.0, 169.0, 22.0 ],
 					"text" : "combine s s s s s @padding 1"
 				}
 
@@ -212,8 +249,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 103.5, 242.800000000000011, 69.0, 22.0 ],
-					"text" : "2 1 . 2 5"
+					"patching_rect" : [ 103.012499999999989, 231.800000000000011, 69.0, 22.0 ],
+					"text" : "2 2 . 0 0"
 				}
 
 			}
@@ -224,7 +261,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 32.0, 212.0, 40.0, 22.0 ],
+					"patching_rect" : [ 31.512499999999989, 201.0, 40.0, 22.0 ],
 					"text" : "sel [ ]"
 				}
 
@@ -236,7 +273,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 32.0, 242.800000000000011, 61.0, 22.0 ],
+					"patching_rect" : [ 31.512499999999989, 231.800000000000011, 61.0, 22.0 ],
 					"text" : "zl group 5"
 				}
 
@@ -248,7 +285,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 32.0, 179.0, 71.0, 22.0 ],
+					"patching_rect" : [ 31.512499999999989, 168.0, 71.0, 22.0 ],
 					"text" : "fromsymbol"
 				}
 
@@ -260,7 +297,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 32.0, 146.0, 40.0, 22.0 ],
+					"patching_rect" : [ 31.512499999999989, 135.0, 40.0, 22.0 ],
 					"text" : "itoa"
 				}
 
@@ -273,65 +310,33 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 81.0, 116.0, 232.0, 22.0 ]
+					"patching_rect" : [ 60.5, 14.0, 232.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-59",
-					"linecount" : 16,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 762.0, 5.0, 311.0, 234.0 ],
-					"text" : "sources:\n- https://github.com/DDlabAU/thermal-camera-heatmap\n- http://www.electroschematics.com/wp-content/uploads/2013/01/Arduino-Uno-R3-Pinouts.png\n- \nhttps://cdn-learn.adafruit.com/downloads/pdf/adafruit-amg8833-8x8-thermal-camera-sensor.pdf\n- \nhttps://shop.pimoroni.com/products/adafruit-amg8833-ir-thermal-camera-breakout?variant=984585994250&currency=GBP&utm_source=google&utm_medium=cpc&utm_campaign=google+shopping&gclid=Cj0KCQjwjOrtBRCcARIsAEq4rW7e04Vyq18ajl9J2Ta8gHTmlRV3BfWqCqYzv4ATNtA1dbcCrI7Jfi0aAtEDEALw_wcB\n- \n"
-				}
-
-			}
-, 			{
-				"box" : 				{
+					"color" : [ 0.0, 0.43921568627451, 0.996078431372549, 1.0 ],
 					"id" : "obj-47",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 111.5, 529.599999177455857, 64.0, 22.0 ],
+					"patching_rect" : [ 103.5, 499.599999177455857, 64.0, 22.0 ],
 					"text" : "jit.fill this 3"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.996078431372549, 0.0, 0.0, 1.0 ],
 					"id" : "obj-45",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 32.0, 529.599999177455857, 64.0, 22.0 ],
+					"patching_rect" : [ 32.0, 499.599999177455857, 64.0, 22.0 ],
 					"text" : "jit.fill this 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-44",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 143.300000000000011, 501.599999177455857, 41.0, 20.0 ],
-					"text" : "blue"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-38",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 54.0, 501.599999177455857, 41.0, 20.0 ],
-					"text" : "Red"
 				}
 
 			}
@@ -342,7 +347,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 32.0, 573.0, 145.0, 22.0 ],
+					"patching_rect" : [ 32.0, 554.0, 145.0, 22.0 ],
 					"text" : "jit.matrix this 4 float32 8 8"
 				}
 
@@ -354,7 +359,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 308.0, 725.0, 117.0, 22.0 ],
+					"patching_rect" : [ 32.0, 723.0, 117.0, 22.0 ],
 					"text" : "jit.window AMG8833"
 				}
 
@@ -366,7 +371,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 308.0, 696.0, 77.0, 22.0 ],
+					"patching_rect" : [ 158.0, 706.0, 77.0, 22.0 ],
 					"text" : "fullscreen $1"
 				}
 
@@ -379,7 +384,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 308.0, 661.0, 24.0, 24.0 ]
+					"patching_rect" : [ 158.0, 671.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -390,7 +395,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 308.0, 633.0, 41.0, 22.0 ],
+					"patching_rect" : [ 158.0, 643.0, 41.0, 22.0 ],
 					"text" : "sel 27"
 				}
 
@@ -402,7 +407,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "int", "int", "int" ],
-					"patching_rect" : [ 308.0, 604.0, 50.5, 22.0 ],
+					"patching_rect" : [ 158.0, 614.0, 50.5, 22.0 ],
 					"text" : "key"
 				}
 
@@ -454,6 +459,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-56", 4 ],
+					"midpoints" : [ 215.0, 459.5, 83.5, 459.5 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -461,6 +467,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-115", 1 ],
+					"midpoints" : [ 41.012499999999989, 263.800000000000011, 97.762499999999989, 263.800000000000011, 97.762499999999989, 220.800000000000011, 162.512499999999989, 220.800000000000011 ],
 					"order" : 0,
 					"source" : [ "obj-104", 0 ]
 				}
@@ -491,6 +498,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
+					"midpoints" : [ 41.5, 422.0, 215.0, 422.0 ],
 					"order" : 0,
 					"source" : [ "obj-116", 0 ]
 				}
@@ -499,7 +507,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
-					"order" : 2,
+					"midpoints" : [ 41.5, 453.0, 18.0, 453.0, 18.0, 493.0, 113.0, 493.0 ],
+					"order" : 3,
 					"source" : [ "obj-116", 0 ]
 				}
 
@@ -515,6 +524,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
+					"midpoints" : [ 41.5, 422.0, 181.0, 422.0 ],
 					"order" : 1,
 					"source" : [ "obj-116", 0 ]
 				}
@@ -523,6 +533,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-77", 0 ],
+					"midpoints" : [ 41.5, 422.0, 56.0, 422.0 ],
 					"order" : 4,
 					"source" : [ "obj-116", 0 ]
 				}
@@ -531,7 +542,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-82", 0 ],
-					"order" : 3,
+					"midpoints" : [ 41.5, 422.0, 117.0, 422.0 ],
+					"order" : 2,
 					"source" : [ "obj-116", 0 ]
 				}
 
@@ -569,6 +581,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-136", 4 ],
+					"midpoints" : [ 109.012499999999989, 296.5, 191.012499999999989, 296.5 ],
 					"source" : [ "obj-137", 4 ]
 				}
 
@@ -576,6 +589,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-136", 3 ],
+					"midpoints" : [ 92.012499999999989, 296.5, 153.512499999999989, 296.5 ],
 					"source" : [ "obj-137", 3 ]
 				}
 
@@ -583,6 +597,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-136", 2 ],
+					"midpoints" : [ 75.012499999999989, 296.5, 116.012499999999989, 296.5 ],
 					"source" : [ "obj-137", 2 ]
 				}
 
@@ -590,6 +605,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-136", 1 ],
+					"midpoints" : [ 58.012499999999989, 296.5, 78.512499999999989, 296.5 ],
 					"source" : [ "obj-137", 1 ]
 				}
 
@@ -674,6 +690,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-56", 3 ],
+					"midpoints" : [ 181.0, 459.5, 73.0, 459.5 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -681,6 +698,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-56", 1 ],
+					"midpoints" : [ 56.0, 459.5, 52.0, 459.5 ],
 					"source" : [ "obj-77", 0 ]
 				}
 
@@ -695,6 +713,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-56", 2 ],
+					"midpoints" : [ 117.0, 459.5, 62.5, 459.5 ],
 					"source" : [ "obj-82", 0 ]
 				}
 
@@ -709,7 +728,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-117", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-92", 0 ]
 				}
 
@@ -717,7 +736,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-92", 0 ]
 				}
 
