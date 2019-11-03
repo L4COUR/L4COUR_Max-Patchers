@@ -1,5 +1,5 @@
 # Max8 LC_WorkSpace
-![](https://github.com/L4COUR/L4COUR_Max-Patchers/blob/master/Max%20Projects/02_Max8-LC_WorkSpace/media/LC_WorkSpace%20Patch%202019-05-19%20at%2019.11.32.png)
+![](./media/LC_WorkSpace%20Patch%202019-05-19%20at%2019.11.32.png)
 
 This patch is my first patch made with Max 8. This is the current patch as of the 18-05-2019. The idea with the patch is to create an environment for working with external sound design equipment. At the moment I am using the moog mother-32 alongside the moog DFAM, which I am interested in controlling via MIDI and CC messages through the Max/MSP environment. The patch consists of three major chunks of max objects
 1) The Audio Interface, which is the input for the incoming channels from the Scarlett 6i6 USB soundcard </br>
@@ -74,7 +74,7 @@ maxApi.addHandler('symbol', (newName) => {
 
 Using the sfrecord~ in conjunction with this node.script save.js, makes it easy to name and store audio files, made within the LC_WorkSpace, in folders that are easily accesible from the Ableton Live environment. The seamless transitioning from the experimental and abstract DSP sound design environment of Max/MSP, and into the familiar tools of Ableton Live, provides a very rigourous engagement with the material. I find that being able to really dive into the extreme complexity of seamless DSP between sound, video, images and other types of media, and combine these in order to create new and interesting media only to then further transform the aesthetic qualities through the means of a DAW, gives the creator an insane amount of malleble control.
 
-![](https://github.com/L4COUR/L4COUR_Max-Patchers/blob/master/Max%20Projects/02_Max8-LC_WorkSpace/media/LC_WorkSpace_NodeScript.gif)
+![](./media/LC_WorkSpace_NodeScript.gif)
 
 ## 17-07-19:Update - Adding Snippet functionality
 
@@ -82,7 +82,7 @@ It has now been a couple of weeks since I created this workspace patch. While th
 
 In order for this to work with this rather complicated snippet however we need to make the "save.js"-file globally available in Max's directory. Now, I don't know if this is how you are supposed to do it. So, I opened the help-patch for node4max, and found a globally available .js file called maxnode-basics.js. I then located the file to its designated folder inside the max-directory. I then just moved the "save.js" file to this exact location: /Max/Contents/Resources/C74/packages/Node For Max/help
 
-![file path](https://github.com/L4COUR/L4COUR_Max-Patchers/blob/master/Max%20Projects/02_Max8-LC_WorkSpace/media/file-path%20for%20save.js-file.png)
+![file path](./media/file-path%20for%20save.js-file.png)
 
 Next in order for the snippet to work, we also need to modify the save.js 
 
@@ -93,7 +93,7 @@ const oldPath = "/Applications/Max.app/Contents/Resources/C74/packages/Node For 
 
 Now I can easily drag in the workspace recorder as a snippet into any patcher at any time that I want it, while having the node script working as it should.
 
-![](https://github.com/L4COUR/L4COUR_Max-Patchers/blob/master/Max%20Projects/02_Max8-LC_WorkSpace/media/snippet-for-gifing.gif)
+![](./media/snippet-for-gifing.gif)
 
 ## Notes: Further development
 I think that expanding the archival capabilities of the sfrecord~ object in Max/MSP has so far been a success and adding making it function as a snippet makes this even more convinient to work with. the future development of this patch will be removing unnecessary objects and consolidating it in subpatches, as to make it more condensed and easy to fit into an already complicated patch.
