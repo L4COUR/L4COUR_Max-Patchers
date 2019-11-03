@@ -30,6 +30,8 @@ Once it is setup then upload the example called "pixel_test" to the arduino.
 
 **File -> Examples -> Adafruit_AMG88 -> pixels_test**
 
+(optional) you can make the refreshrate of the camera sensor faster by changing the delay(1000) in line 61 to delay(100).
+
 when you have uploaded the code **it is important that you do NOT open the serial monitor in the arduino IDE.** Instead you open the Max-patch and press the toggle button in order to initiate the patch.
 
 then you select the corresponding serial port from the drop down menu, and now the code should be running as intended.
