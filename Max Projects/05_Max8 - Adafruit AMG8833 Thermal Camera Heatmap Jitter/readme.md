@@ -1,73 +1,38 @@
 # Max8: Adafruit AMG8833 Thermal Camera Heatmap Jitter
 
+This repository contains the Max/MSP/Jitter code, for visualising data from the Adafruit thermal camera. The camera is a heatcamera with an 8 x 8 pixel dimension, that can measure temperatures between 0 to 80 degrees celsius. the sensor is capable of registering a human of up to 7 meters away, acording to Adafruit.
 
+## Adafruit AMG8833 Setup
 
-## Arduino Code
+In order to use the max-patch, you must first start by following adafruits guide, in order to setup the camera with an arduino. This involves constructing the circuit below.
 
-``` c
-/***************************************************************************
-  This is a library for the AMG88xx GridEYE 8x8 IR camera
+![](https://cdn-learn.adafruit.com/assets/assets/000/043/127/large1024/temperature_AMG88_test_bb.png?1498596903)
 
-  This sketch tries to read the pixels from the sensor
+And downloading the "Adafruit_AMG88xx library", by following this path
 
-  Designed specifically to work with the Adafruit AMG88 breakout
-  ----> http://www.adafruit.com/products/3538
+![](https://cdn-learn.adafruit.com/assets/assets/000/048/539/large1024/temperature___humidity_managelib.png?1511746137)
 
-  These sensors use I2C to communicate. The device's I2C address is 0x69
+Type in **AMG88xx** until you see the Adafruit Library pop up. Click Install!
 
-  Adafruit invests time and resources providing this open source code,
-  please support Adafruit andopen-source hardware by purchasing products
-  from Adafruit!
+![](https://cdn-learn.adafruit.com/assets/assets/000/048/540/large1024/temperature___humidity_amglib.png?1511746208)
 
-  Written by Dean Miller for Adafruit Industries.
-  BSD license, all text above must be included in any redistribution
- ***************************************************************************/
+the final step of setting up the Adafruit AMG8833 is to check if it is working by running the "amg88xx_test" example code, and checking to see that the serial monitor outputs (room temperature). If all here looks good, you are done with the setup.
 
-#include <Wire.h>
-#include <Adafruit_AMG88xx.h>
+**File->Examples->Adafruit_AMG88xx->amg88xx_test**
 
-Adafruit_AMG88xx amg;
+![](https://cdn-learn.adafruit.com/assets/assets/000/043/121/large1024/temperature_serialtest.gif?1498596216)
 
-float pixels[AMG88xx_PIXEL_ARRAY_SIZE];
+## Getting Started
 
-void setup() {
-    Serial.begin(9600);
-    Serial.println(F("AMG88xx pixels"));
+Once it is setup then upload the example called "pixel_test" to the arduino.
 
-    bool status;
-    
-    // default settings
-    status = amg.begin();
-    if (!status) {
-        Serial.println("Could not find a valid AMG88xx sensor, check wiring!");
-        while (1);
-    }
-    
-    Serial.println("-- Pixels Test --");
+**File -> Examples -> Adafruit_AMG88 -> pixels_test**
 
-    Serial.println();
+when you have uploaded the code **it is important that you do NOT open the serial monitor in the arduino IDE.** Instead you open the Max-patch and press the toggle button in order to initiate the patch.
 
-    delay(100); // let sensor boot up
-}
+then you select the corresponding serial port from the drop down menu, and now the code should be running as intended.
 
-
-void loop() { 
-    //read all the pixels
-    amg.readPixels(pixels);
-
-    Serial.print("[");
-    for(int i=1; i<=AMG88xx_PIXEL_ARRAY_SIZE; i++){
-      Serial.print(pixels[i-1]);
-      Serial.print(", ");
-      if( i%8 == 0 ) Serial.println();
-    }
-    Serial.println("]");
-    Serial.println();
-
-    //delay a second
-    delay(100);
-}
-```
+(optional) you can fullscreen the visualizer by pressing ESC, and exit fullscreen by once again pressing ESC.
 
 
 ## Sources:
