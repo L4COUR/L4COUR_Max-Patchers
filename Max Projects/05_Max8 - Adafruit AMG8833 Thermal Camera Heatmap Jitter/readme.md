@@ -2,7 +2,7 @@
 
 This repository contains the Max/MSP/Jitter code, for visualising data from the Adafruit thermal camera. The camera is a heatcamera with an 8 x 8 pixel dimension, that can measure temperatures between 0 to 80 degrees celsius. the sensor is capable of registering a human of up to 7 meters away, acording to Adafruit.
 
-<img src="./media/Adafruit AMG8833 Thermal camera Max-patch Jitter.png" alt="Schematic" style="zoom: 100%;" />
+<img src="./media/Max_MSP-heating-camera.gif" alt="Schematic" style="zoom: 100%;" />
 
 ## Adafruit AMG8833 Setup
 
