@@ -6,7 +6,7 @@ This repository contains the Max/MSP/Jitter code, for visualising data from the 
 
 ## Adafruit AMG8833 Setup
 
-In order to use the max-patch, you must first start by following adafruits guide, in order to setup the camera with an arduino. This involves constructing the circuit below.
+In order to use the max-patch, you must first start by following adafruits guide, in order to setup the camera with an arduino. This involves constructing the circuit below. it is very important that the camera is positioned acording to the schematic, with the name "AMG8833" facing your to your right.
 
 <img src="./media/Adafruit AMG8833 connected to Arduino.png" alt="Schematic" style="zoom: 100%;" />
 
