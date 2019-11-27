@@ -32,7 +32,7 @@ Once it is setup then upload the example called "pixel_test" to the arduino.
 
 (optional) you can make the refreshrate of the camera sensor faster by changing the delay(1000) in line 61 to delay(100).
 
-![](/Users/Pacour/Developer/L4COUR_Max-Patchers/Max Projects/05_Max8 - Adafruit AMG8833 Thermal Camera Heatmap Jitter/media/pixel_test Mod.png)
+![](./media/pixel_test Mod.png)
 
 when you have uploaded the code **it is important that you do NOT open the serial monitor in the arduino IDE.** Instead you open the Max-patch and press the toggle button in order to initiate the patch.
 
@@ -42,7 +42,7 @@ then you select the corresponding serial port from the drop down menu, and now t
 
 Now that everything is working, we can start to wonder what the opertunities of using this setup could be. At this point I am thinking that some form of machine learning "blob detection" would make the most sense, due to the fact that what we are displaying are essentially blobs of heat on a canvas. If we can detect where on the screen these blobs are detected we can extract blob detection data which can be used to control stuff.
 
-![](/Users/Pacour/Developer/L4COUR_Max-Patchers/Max Projects/05_Max8 - Adafruit AMG8833 Thermal Camera Heatmap Jitter/media/cvjit.png)
+![](./media/cvjit.png)
 
 In order to do this, we will first need to download Jean-Marc Pelletier's cv.jit package via the Max/MSP package manager. This will enable computer vision for Jitter. 
 
