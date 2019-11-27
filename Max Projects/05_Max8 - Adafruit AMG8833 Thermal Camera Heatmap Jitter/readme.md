@@ -32,7 +32,7 @@ Once it is setup then upload the example called "pixel_test" to the arduino.
 
 (optional) you can make the refreshrate of the camera sensor faster by changing the delay(1000) in line 61 to delay(100).
 
-![](./media/pixel_test Mod.png)
+![](./media/pixel_test_Mod.png)
 
 when you have uploaded the code **it is important that you do NOT open the serial monitor in the arduino IDE.** Instead you open the Max-patch and press the toggle button in order to initiate the patch.
 
