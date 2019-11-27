@@ -1,8 +1,8 @@
 {
 	"name" : "Adafruit AMG8833 Thermal Camera Heatmap Jitter",
 	"version" : 1,
-	"creationdate" : 3655588330,
-	"modificationdate" : 3655588330,
+	"creationdate" : 3657706506,
+	"modificationdate" : 3657706507,
 	"viewrect" : [ 0.0, 0.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -15,6 +15,10 @@
 				"local" : 1,
 				"toplevel" : 1
 			}
+
+		}
+,
+		"media" : 		{
 
 		}
 
