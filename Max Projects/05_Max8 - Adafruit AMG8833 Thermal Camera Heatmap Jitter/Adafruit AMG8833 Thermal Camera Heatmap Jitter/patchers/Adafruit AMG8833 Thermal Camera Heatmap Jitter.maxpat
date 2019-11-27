@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 620.0, 78.0, 705.0, 773.0 ],
+		"rect" : [ 214.0, 78.0, 1431.0, 660.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 298.262500000000102, 672.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"autofit" : 1,
 					"forceaspect" : 1,
 					"id" : "obj-82",
@@ -46,7 +58,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 421.0, 25.0, 404.0, 277.183856502242122 ],
+					"patching_rect" : [ 430.5, 25.0, 364.5, 250.082959641255599 ],
 					"pic" : "/Users/Pacour/Developer/L4COUR_Max-Patchers/Max Projects/05_Max8 - Adafruit AMG8833 Thermal Camera Heatmap Jitter/media/Adafruit AMG8833 connected to Arduino.png"
 				}
 
@@ -58,7 +70,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 440.5, 308.0, 365.0, 33.0 ],
+					"patching_rect" : [ 430.5, 279.5, 365.0, 33.0 ],
 					"text" : "In order to use this patch it is important that the Adafruit AMG8833 is turned this way relative to you"
 				}
 
@@ -70,8 +82,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 549.0, 493.799999999999955, 236.0, 208.0 ],
-					"presentation_linecount" : 296,
+					"patching_rect" : [ 551.0, 484.799999999999955, 239.0, 208.0 ],
 					"text" : "3: The list is the received and analysed for minimum and maximum values which are used in the scale object in order to sepperate high from low values from each other. All the values from the list are routed into the blue plane and all the of the higher values are routed into the red plane.\n\nThe Planes are then assembled into the jit.matrix object which converts the lists into a matrix with 8 x 8 dim. before sending it to the jit.gl.videoplane for final rendering it is inverted using the jit.dimmap. The whole process ends by being displayed in the jit.world object."
 				}
 
@@ -83,8 +94,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 144.0, 686.0, 146.0, 100.0 ],
-					"presentation_linecount" : 81,
+					"patching_rect" : [ 144.0, 686.0, 147.0, 100.0 ],
 					"text" : "2: Using sel object to know where the list starts and ends. grouping the values as floats and then finally creaing a list containing 64 float32 values."
 				}
 
@@ -108,7 +118,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 340.012499999999989, 334.799999999999955, 30.0, 22.0 ],
+					"patching_rect" : [ 338.012499999999989, 357.799999999999955, 30.0, 22.0 ],
 					"text" : "r list"
 				}
 
@@ -126,25 +136,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-65",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 307.262500000000102, 647.799999999999955, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-62",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "" ],
-					"patching_rect" : [ 307.262500000000102, 679.799999999999955, 232.0, 22.0 ],
-					"text" : "jit.world AMG8833 @floating 1"
+					"patching_rect" : [ 298.262500000000102, 706.799999999999955, 325.0, 22.0 ],
+					"text" : "jit.world AMG8833 @floating 1 @fps 60 @ fsaa 1 @dim 8 8"
 				}
 
 			}
@@ -155,7 +153,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 449.512500000000045, 382.799999999999955, 90.100000000000023, 22.0 ],
+					"patching_rect" : [ 447.512500000000045, 405.799999999999955, 90.100000000000023, 22.0 ],
 					"text" : "maximum"
 				}
 
@@ -168,7 +166,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 476.112499999999955, 421.799999999999955, 24.0, 24.0 ]
+					"patching_rect" : [ 474.112499999999955, 444.799999999999955, 24.0, 24.0 ]
 				}
 
 			}
@@ -179,7 +177,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 357.112500000000011, 382.799999999999955, 87.399999999999977, 22.0 ],
+					"patching_rect" : [ 355.112500000000011, 405.799999999999955, 87.399999999999977, 22.0 ],
 					"text" : "minimum"
 				}
 
@@ -191,7 +189,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 340.012499999999989, 616.799999999999955, 199.250000000000114, 22.0 ],
+					"patching_rect" : [ 338.012499999999989, 639.799999999999955, 199.250000000000114, 22.0 ],
 					"text" : "jit.dimmap this @invert 1"
 				}
 
@@ -204,7 +202,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 412.212500000000034, 458.399999177455811, 50.0, 22.0 ]
+					"patching_rect" : [ 410.212500000000034, 481.399999177455811, 50.0, 22.0 ]
 				}
 
 			}
@@ -216,7 +214,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 357.112500000000011, 458.399999177455811, 50.0, 22.0 ]
+					"patching_rect" : [ 355.112500000000011, 481.399999177455811, 50.0, 22.0 ]
 				}
 
 			}
@@ -227,7 +225,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 510.112499999999955, 458.399999177455811, 29.5, 22.0 ],
+					"patching_rect" : [ 508.112499999999955, 481.399999177455811, 29.5, 22.0 ],
 					"text" : "1"
 				}
 
@@ -239,7 +237,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 476.112499999999955, 458.399999177455811, 29.5, 22.0 ],
+					"patching_rect" : [ 474.112499999999955, 481.399999177455811, 29.5, 22.0 ],
 					"text" : "-1"
 				}
 
@@ -251,7 +249,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 340.012499999999989, 505.399999177455811, 199.5, 22.0 ],
+					"patching_rect" : [ 338.012499999999989, 528.399999177455811, 199.5, 22.0 ],
 					"text" : "scale"
 				}
 
@@ -264,7 +262,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 449.512500000000045, 540.999998354911668, 89.5, 22.0 ],
+					"patching_rect" : [ 447.512500000000045, 563.999998354911668, 89.5, 22.0 ],
 					"text" : "jit.fill this 3"
 				}
 
@@ -277,7 +275,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 340.012499999999989, 540.999998354911668, 104.5, 22.0 ],
+					"patching_rect" : [ 338.012499999999989, 563.999998354911668, 104.5, 22.0 ],
 					"text" : "jit.fill this 1"
 				}
 
@@ -289,7 +287,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 340.012499999999989, 584.399999177455811, 199.0, 22.0 ],
+					"patching_rect" : [ 338.012499999999989, 607.399999177455811, 199.0, 22.0 ],
 					"text" : "jit.matrix this 4 float32 8 8 @dim 8 8"
 				}
 
@@ -313,7 +311,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 340.012499999999989, 647.799999999999955, 199.250000000000114, 22.0 ],
+					"patching_rect" : [ 338.012499999999989, 670.799999999999955, 199.250000000000114, 22.0 ],
 					"text" : "jit.gl.videoplane AMG8833"
 				}
 
@@ -563,6 +561,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-3", 0 ]
 				}
@@ -578,7 +583,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-38", 1 ],
-					"midpoints" : [ 366.612500000000011, 492.399999177455811, 385.612500000000011, 492.399999177455811 ],
+					"midpoints" : [ 364.612500000000011, 515.399999177455811, 383.612500000000011, 515.399999177455811 ],
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -586,7 +591,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-38", 4 ],
-					"midpoints" : [ 519.612499999999955, 500.899999177455811, 493.912500000000023, 500.899999177455811 ],
+					"midpoints" : [ 517.612499999999955, 523.899999177455811, 491.912500000000023, 523.899999177455811 ],
 					"source" : [ "obj-33", 0 ]
 				}
 
@@ -594,7 +599,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-38", 3 ],
-					"midpoints" : [ 485.612499999999955, 495.899999177455811, 457.8125, 495.899999177455811 ],
+					"midpoints" : [ 483.612499999999955, 518.899999177455811, 455.8125, 518.899999177455811 ],
 					"source" : [ "obj-34", 0 ]
 				}
 
@@ -616,7 +621,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
-					"midpoints" : [ 459.012500000000045, 573.199998766183739, 349.512499999999989, 573.199998766183739 ],
+					"midpoints" : [ 457.012500000000045, 596.199998766183739, 347.512499999999989, 596.199998766183739 ],
 					"source" : [ "obj-40", 0 ]
 				}
 
@@ -653,7 +658,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-60", 0 ],
-					"midpoints" : [ 366.612500000000011, 410.799999999999955, 485.612499999999955, 410.799999999999955 ],
+					"midpoints" : [ 364.612500000000011, 433.799999999999955, 483.612499999999955, 433.799999999999955 ],
 					"order" : 0,
 					"source" : [ "obj-56", 0 ]
 				}
@@ -678,15 +683,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
-					"midpoints" : [ 459.012500000000045, 449.099999588727883, 421.712500000000034, 449.099999588727883 ],
+					"midpoints" : [ 457.012500000000045, 472.099999588727883, 419.712500000000034, 472.099999588727883 ],
 					"source" : [ "obj-61", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-62", 0 ],
-					"source" : [ "obj-65", 0 ]
 				}
 
 			}
@@ -708,7 +706,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
-					"midpoints" : [ 349.512499999999989, 491.899999177455811, 459.012500000000045, 491.899999177455811 ],
+					"midpoints" : [ 347.512499999999989, 514.899999177455811, 457.012500000000045, 514.899999177455811 ],
 					"order" : 0,
 					"source" : [ "obj-68", 0 ]
 				}
@@ -717,7 +715,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-56", 0 ],
-					"midpoints" : [ 349.512499999999989, 372.799999999999955, 366.612500000000011, 372.799999999999955 ],
+					"midpoints" : [ 347.512499999999989, 395.799999999999955, 364.612500000000011, 395.799999999999955 ],
 					"order" : 2,
 					"source" : [ "obj-68", 0 ]
 				}
@@ -726,7 +724,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-61", 0 ],
-					"midpoints" : [ 349.512499999999989, 373.799999999999955, 459.012500000000045, 373.799999999999955 ],
+					"midpoints" : [ 347.512499999999989, 396.799999999999955, 457.012500000000045, 396.799999999999955 ],
 					"order" : 1,
 					"source" : [ "obj-68", 0 ]
 				}
