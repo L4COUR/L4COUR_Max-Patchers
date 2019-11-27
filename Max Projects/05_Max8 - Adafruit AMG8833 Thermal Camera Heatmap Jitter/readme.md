@@ -43,3 +43,4 @@ then you select the corresponding serial port from the drop down menu, and now t
 - https://github.com/DDlabAU/thermal-camera-heatmap
 - https://cdn-learn.adafruit.com/downloads/pdf/adafruit-amg8833-8x8-thermal-camera-sensor.pdf
 - http://www.electroschematics.com/wp-content/uploads/2013/01/Arduino-Uno-R3-Pinouts.png
+- https://vimeo.com/371734747
