@@ -19,7 +19,7 @@
 
 Ardunio setup for using the ultrasound in order to detect distance. the lower the number the closer the object is to the ultrasound sensor.
 
-![](./media/arduino_max.png)
+![](./media/Max_arduino_ultrasound.png)
 
 This is the minimum amount of max code required to extract the sensor values from the arduino code. from this point in the code we could work with the stream of numbers we are recieving in a lot of different ways.
 
