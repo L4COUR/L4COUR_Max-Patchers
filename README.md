@@ -22,7 +22,7 @@ This repository is split into two sub sections. The Max Archive acts as a folder
 - [05_Max8 Adafruit AMG8833 Thermal Camera Jitter Heatmap](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects/05_Max8%20-%20Adafruit%20AMG8833%20Thermal%20Camera%20Heatmap%20Jitter)
 ![](https://github.com/L4COUR/L4COUR_Max-Patchers/raw/master/Max%20Projects/05_Max8%20-%20Adafruit%20AMG8833%20Thermal%20Camera%20Heatmap%20Jitter/media/Max_MSP-heating-camera.gif)
 
-- [06_Max8 Arduino + Ultrasound (Maxsonar)]([https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects/06_Max8%20-%20Arduino%20%2B%20Ultrasound%20(Maxsonar)](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max Projects/06_Max8 - Arduino %2B Ultrasound (Maxsonar))
+- [06_Max8 Arduino + Ultrasound (Maxsonar)]([https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects/06_Max8%20-%20Arduino%20%2B%20Ultrasound%20(Maxsonar)
 
   ![](https://github.com/L4COUR/L4COUR_Max-Patchers/raw/master/Max%20Projects/06_Max8%20-%20Arduino%20%2B%20Ultrasound%20(Maxsonar)/media/Max_arduino_ultrasound.png)
 
