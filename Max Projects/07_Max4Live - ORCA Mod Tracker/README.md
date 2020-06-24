@@ -2,7 +2,7 @@
 
 ## Inspiration
 
-![](https://polyend.com/wp-content/themes/blankslate/assets/2020/tracker_www.mp4)
+![](https://polyend.com/wp-content/themes/blankslate/assets/2020/fast-track.jpg)
 
 The polish manufacture Polyend released their [Polyend Tracker](https://polyend.com/tracker/) during early 2020. This is the first issue of a hardware mod/music tracker. The most famous trackers was the once run on the Amiga back in 1987 and contiued through the 90's and into the 2000's. Personally I had newer  come across this way of making music before I saw the Polyend Tracker. I always associated music on computers with DAW's or Live Coding environments like Supercollidor or Tidalcycles. Getting into mod-trackers was a welcome breath of fresh air for me. 
 
