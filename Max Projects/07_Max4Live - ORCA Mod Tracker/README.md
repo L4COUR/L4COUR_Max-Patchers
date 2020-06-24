@@ -10,7 +10,7 @@ The polish manufacture Polyend released their [Polyend Tracker](https://polyend.
 
 The desirable aspekt of a mod-tracker is the fast paced workflow. Easy to input and edit notes, adding modulation and assemble patterns into a sektion.   
 
-##ORCA Mod Tracker
+## ORCA Mod Tracker
 
 When I first saw [loopop's full tutorial on the Polyend tracker](https://youtu.be/MQufJBVvAtY?t=694) I immediatly thought I could make my own tracker based on how the sequencing in the polyend tracker works. The Polyend tracker's style also reminded me of the Live Coding environment ORCA, so I decided to make my tracker using it. I also thought it would be cool to use the ORCA tracker with Ableton Live, so also build a Max for Live device to better connect the programs with each other. 
 
