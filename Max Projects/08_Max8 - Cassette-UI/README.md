@@ -147,6 +147,7 @@ c+Y0XCaRQxGSat9pA80j3hYKRKSlUt0Me6m7IgaZsUMpuJVsMsVQwH7X.Y07
 PyNmA2rN1ImTM1zd6+7s+e7yC30F
 -----------end_max5_patcher-----------
 </code></pre>
+</details>
 ## Fun with mathematics and equations in Max/MSP
 
 In Max there is a lot of ways to engage or add mathmatical sections to your patch from simple adding and subtracting to cartisian and abstract calculus. As a humanities student studying Audiodesign I am by no means a mathematical genius, I do however like to explore the possibilities of complexities as a means for artistic expression. I would like to challenge how a lot of artists are scared or put off by encounting mathematics in their creative tools, because I believe the mathematical complexities are key in understanding and further breaking down the black-boxes that are piling up in our highly advanced technological society. I think it is of the upmost importance that instead of fleeing from the equations that describes the tools we use, we should approach them. Learn how we can decipher these cryptic diagrams and equations so that we may develop an approach to mathematical complexities from a humanities standpoint.
@@ -228,6 +229,8 @@ Iu95I7M5onn95Izs5oY80S278TeHAzyJdydpbSNetm2IdxRzczTmZmbzzlGM
 o4oSY18DlGOcoYxx1lpT+Nlwea7+B17unHA
 -----------end_max5_patcher-----------
 </code></pre>
+</details>
+
 
 ## Source
 
