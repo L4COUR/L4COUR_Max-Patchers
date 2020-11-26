@@ -149,8 +149,8 @@ jYkacuEBl7Igal5UMP1JVsMsVFxH7X.Y0TqyNMH2rN1ImTMb6d6+3s+e.AsG
 m..
 -----------end_max5_patcher-----------
 </code></pre>
-
 </details>
+
 ## Fun with mathematics and equations in Max/MSP
 
 In Max there is a lot of ways to engage or add mathmatical sections to your patch from simple adding and subtracting to cartisian and abstract calculus. As a humanities student studying Audiodesign I am by no means a mathematical genius, I do however like to explore the possibilities of complexities as a means for artistic expression. I would like to challenge how a lot of artists are scared or put off by encounting mathematics in their creative tools, because I believe the mathematical complexities are key in understanding and further breaking down the black-boxes that are piling up in our highly advanced technological society. I think it is of the upmost importance that instead of fleeing from the equations that describes the tools we use, we should approach them. Learn how we can decipher these cryptic diagrams and equations so that we may develop an approach to mathematical complexities from a humanities standpoint.
@@ -234,6 +234,56 @@ o4oSY18DlGOcoYxx1lpT+Nlwea7+B17unHA
 </code></pre>
 </details>
 
+<details>
+  <summary>the inner mechanism simulation</summary>
+<pre><code>
+----------begin_max5_patcher----------
+1928.3ocyZs0iahCE94L+JPQ8g1toyZavbYk1G1GqTk1p801ciHAmD2R.VvY
+locU+uu9BjPHPFCXRmQBlY7si+N2O17e2Ma9pzmHEys9MqOYMa1+c2rYxlDM
+Lq7+mMee3SqiCKjCadB4wzUeY9BUWLxSLYywogQ6IEEVf6AHbU2IG1SShIL4
+TgkMlExVuilrcYNYMSQZamf6sq+CzYgEJ3dvBq.awaD5df0eeZUSOvZtr6nQ
+Qjj5snFD6aYDEUlO+3RPij6ZNRdGxFMWz3Ot6NwqEimOrJLYae4.HWz83JLi
+8MGlkal1wMzv3tR9y+wt2p.P6NUAfvoWG.LE7BOtpUesD.RnJws+jCaTfAg8
+asdGrU3htBbQRUcLxsD1Xs.7Evilv5.gdCBgG1uhj2aYmquX+6D.kXB7LROT
+mxpEWyrE4N+3VHObOgQxWRRBWEKmN31gVtLSfVj2jhVfwQa6ZuuqSqUzyyCT
+RbaWMsW0W8EhtcpuXkaVrGdJEn.aSKP2Dmx2YUq5lz78gRD41W76IgrKDMo3
+2wz3WDpIbK4BM50wjv79pQi8ABMZLRxDrwCUitCviMX7lrvuZQs1zaDpDyk1
+rNPCiPWChv0owwV6HwwoyGltbks7yIFctlt7wm1ArW0dqH7ARzRdi7cwxPFK
+mt5.SUbwri3d1bB22jb9fEksjw22zBZpLCFWYiR9We4hrzsaiICLNlsRiG4T
+81X9vAnaTHL9RmmZYaOvnX1pxNvCNJ1Ub5ALpUwgDNOzBYA6LlM94Qqup7Rz
+PMMDx6ZVGcI9gAA2vP3sTCEVAzIJdFzE9RMdNDhuja3ppzXp3F3fajsdDIN7
+aVPPes0g.3kLEakMO1w3V9P7fh32UJMFBtAirZy1gpSv7e1YuAQ368uvAfpt
+DCmKGz18metbsZhiA3IHyNnsyPvKOEHFOwl95GuEXg77FWBJcajhruQdsN7c
+5PJytM1gMvu7nR8ttUr8U4GKN86NififSP1Kfgj6RaLBGaoFg+jmHCz4EQoM
+sayWljyzUnCDZ+hoPm0o62SDRsFL07+4ToF4jB9PBYbpsLllPj5c0syzt9Ha
+Uhxx2HECFzICFbImKXPmgUWX7iu27Pr7xWDIKThtdiQnIw3tdaS36doMQIbf
+AC.N.SBmOza3npEGBPCE.9CJWLSU4QoIiHaL7jUqgu2MJncV5iV8+jwKYAXu
+wkKFWjD1d7HerI0Qe0Fn0ua8AwCIYKamU5FK93n4DKVXFwJMwpHKMM150RN8
+a9bxq1f3idG+gsit9qIhK7iOI4nqMHa9.936E+kC+u3dnEu4OzjBZDwJOLhd
+PNwFK+mS37B939K9yedfcsAWAly7A1WcVG0wdCgp6d1SVyfuWuL5tgYHW4xF
+4IKhy7IE6idodtFUPWc.1dnow6xs5d21RFrrGGLtx3612hm+75jmj2L2tMzX
+xCj7pb4fUY3ElkUq4Y0lhfa7kT4B4u3XSzDUSviMkSd3TJhGaMLmyDXbNvgb
+4te9StU2ijXYRiH4IGnxUR0HWtTtkjRfDtHrHKbsZxQEY2ehuKnYEq02QE3R
+5DvW8FehyxkwaiSW+0F40llQRnI0yG6rtiHaBODyVtIMg6G66x8fzaSK8uob
+O1ZmBTHAvejSCiOt82lSiRSDahyjEhlqHGOmBrJdTcvHGQRXVKSVkceGcVvA
+4ghUg4BQUoIAppSF2y74ccbdwjMrxtynIIM3hrzrt6Lmtc2Ul6pTdm6u1ZK6
+oX4gDUuK4ZErkhJYNebgwwkFpmu7OElP49qHLpRDf.G6T4VXWw5bdMcmgWUO
+OzROQbs70jGoQrcRBUWYfObZVkRz7iR4H5VRA671XgaKNukB12TL8ZMcXUoU
+7RFYeVLGEmO.t8AsfUrK8whxAVonUmAb5yjqtUccudm090790H+JZ8lOyIHn
+VGs4HDUoSeLK4ZtA61U3ybrWM8FpRz5T0pypb6aXFgHgGXm7BnN7BGu1Opyt
+SfoIXcZCrmbYHxwpCEA4lRze6bghzC4qq30J15Bqy2fbceFM4nCzOUsijiq0
+s0vOCAicKKsV5oJsLuooxGOuWtW4DnJ9o7inXZfu6KV3212vY44SNQUA6guQ
+4oRdJK2p3eyYu907ZEeKu5uekWb2ar9EKdkcuo0TXcdVEEjspvXGeidWEd10
+KDSNhycbo3CMcXUxMtvQk3KjtlqpNbSINOhZCp12jZqBA8INTGhilHhCzf3d
+SDxQA5Pb2Ig3hOagmm3xOOypfSi.nd5PKwWN33oEDoEt7LBtb0gVxcDbzzBn
+MsNMpz7HUssfa.wkepHsQ7QZlToW7LZOFQhBzSS0wHzBeCwk6MiVhKRWCkEn
+sQnk6siVPczCkegPimVtvaGtPZQKLdJ7rzbY6f3NAFwHPKuXAlgVZEFB.Lhh
+oS+yivPNm0i1McIXJkG8zbgNSBxcBzl31i1DUKWOUriQQKOr1BzwlSiuNAa8
+wF.T95.JOaCHp7A5RIzXET5nS3YBtmmmtXZrZDdt5RoQqQni+Yw0DMdtmuNZ
+4WFHPUVeiKbRPjFWzTiKY5xKXp6KWp4EKIuTo1tPIwIpb2Ot6+sRZzrL
+-----------end_max5_patcher-----------
+</code></pre>
+</details>
 
 ## Source
 
