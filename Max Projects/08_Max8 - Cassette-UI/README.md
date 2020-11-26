@@ -163,16 +163,18 @@ In DataGenetics model of a spool of tape we get some interesting mathematical va
 
 
 
-![](http://datagenetics.com/blog/march12018/ring.png)
+![](./media/spool-math.png)
 
 If we were to unroll the entire tape to make a long strip, we'll define this length to be *L*.
 
-![](http://datagenetics.com/blog/march12018/equiv.png)
+![](./media/length.png)
 
 In DataGenetics history section they define *L* from a 7" spool to be 732 meters of tape. The Thickness *h* of the most common tapes were 35 µm or 0,000032 meters. I measure the inner radius in one of my own reels to be 2,5 cm or 0,025 meters. The reason that I am translating everything to meters is because meters is the SI unit or standard unit for meauring lengths in mathematical equations. With all of these numbers we may now calculate *R* the outer radiues through this equation;
 $$
 R = \sqrt{\frac {Lh}{\pi}+r^2}
 $$
+![](./media/equation.png)
+
 Here is some sample data plotted in graph form. The y-axis shows the Radius of the pancake of tape on a reel (as a percentage of a full reel). In this example, the hub radius is 10% of full tape radius.
 
 ![](http://datagenetics.com/blog/march12018/g1.png)
@@ -184,9 +186,9 @@ The graphs are symmetrical (as we'd expect), crossing over at 50%. It's only at 
 Now that we have an initial understanding of the mathematics behind the reel to reel tape machines we can model this behaviour in Max/MSP. From the basic understand of the max objekt [function] we know that we can make curves that translates the speed of parameter changes in max. This is compairable to how automation lines work in Ableton Live. The question is how I would be able to implement this exact tape behaviour that we see in the above graph. Imagine that the lines in the graphs are automation lines or a [function](https://docs.cycling74.com/max8/refpages/function?q=function) objekt in max that we can use to control other parameters.
 
 I realized that in order to implement this behaviour I would have to work with the [expr](https://docs.cycling74.com/max8/refpages/expr) object in Max. I have never really worked with the expr object before, because it seemed very hard to understand and use. So how can I translate;
-$$
-R = \sqrt{\frac {Lh}{\pi}+r^2}
-$$
+
+![](./media/equation.png)
+
 Into a C-like language that Max's expr object could understand?
 
 ```
@@ -233,6 +235,8 @@ o4oSY18DlGOcoYxx1lpT+Nlwea7+B17unHA
 -----------end_max5_patcher-----------
 </code></pre>
 </details>
+
+![](./media/reel-to-reel.png)
 
 <details>
   <summary>the inner mechanism simulation</summary>
