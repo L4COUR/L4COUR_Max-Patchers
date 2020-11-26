@@ -147,5 +147,91 @@ c+Y0XCaRQxGSat9pA80j3hYKRKSlUt0Me6m7IgaZsUMpuJVsMsVQwH7X.Y07
 PyNmA2rN1ImTM1zd6+7s+e7yC30F
 -----------end_max5_patcher-----------
 </code></pre>
+## Fun with mathematics and equations in Max/MSP
+
+In Max there is a lot of ways to engage or add mathmatical sections to your patch from simple adding and subtracting to cartisian and abstract calculus. As a humanities student studying Audiodesign I am by no means a mathematical genius, I do however like to explore the possibilities of complexities as a means for artistic expression. I would like to challenge how a lot of artists are scared or put off by encounting mathematics in their creative tools, because I believe the mathematical complexities are key in understanding and further breaking down the black-boxes that are piling up in our highly advanced technological society. I think it is of the upmost importance that instead of fleeing from the equations that describes the tools we use, we should approach them. Learn how we can decipher these cryptic diagrams and equations so that we may develop an approach to mathematical complexities from a humanities standpoint.
+
+As of recent I have started working with various types of reel to reel and cassette tapes. I think there are so many things in this old medium that is still worth exploring even in 2020 as digital audio has become the norm. Recording audio to a cassette or tape-reel is definatly something else than working within your DAW or Live Coding environment. Unfortunatly my reel to reel tape recorder is very old and needs fixing. One of the reels spins slower than the other resulting in the tape not being picked up fast enough. This made me consider how cool it would be to have a completly computer controlled reel to reel tape machine that you could control from Max. each reel would be on it's own motor and digitally it would be possible to calculate how fast or slow the motors should go depending on the spool of tape mounted to the reel. I did not however have any understanding of the mathematics of how the reels rotational speed changes as the spool of tape gets winded on to the other. I found this blogpost from [DataGenetics](http://datagenetics.com/blog/march12018/index.html) about Reel to Reel Tapes that described in great detail the history and math.
+
+## The Math of Tape
+
+In DataGenetics model of a spool of tape we get some interesting mathematical variables to work with. The width of the tape is *w*, and it's thickness is *h*. The radius of the inner spool is *r*, and the outside radius is *R*.
+
+
+
+![](http://datagenetics.com/blog/march12018/ring.png)
+
+If we were to unroll the entire tape to make a long strip, we'll define this length to be *L*.
+
+![](http://datagenetics.com/blog/march12018/equiv.png)
+
+In DataGenetics history section they define *L* from a 7" spool to be 732 meters of tape. The Thickness *h* of the most common tapes were 35 µm or 0,000032 meters. I measure the inner radius in one of my own reels to be 2,5 cm or 0,025 meters. The reason that I am translating everything to meters is because meters is the SI unit or standard unit for meauring lengths in mathematical equations. With all of these numbers we may now calculate *R* the outer radiues through this equation;
+$$
+R = \sqrt{\frac {Lh}{\pi}+r^2}
+$$
+Here is some sample data plotted in graph form. The y-axis shows the Radius of the pancake of tape on a reel (as a percentage of a full reel). In this example, the hub radius is 10% of full tape radius.
+
+![](http://datagenetics.com/blog/march12018/g1.png)
+
+The graphs are symmetrical (as we'd expect), crossing over at 50%. It's only at this midway point that the rotation speeds of both spools witll be the same.
+
+## Tape Math in Max/MSP
+
+Now that we have an initial understanding of the mathematics behind the reel to reel tape machines we can model this behaviour in Max/MSP. From the basic understand of the max objekt [function] we know that we can make curves that translates the speed of parameter changes in max. This is compairable to how automation lines work in Ableton Live. The question is how I would be able to implement this exact tape behaviour that we see in the above graph. Imagine that the lines in the graphs are automation lines or a [function](https://docs.cycling74.com/max8/refpages/function?q=function) objekt in max that we can use to control other parameters.
+
+I realized that in order to implement this behaviour I would have to work with the [expr](https://docs.cycling74.com/max8/refpages/expr) object in Max. I have never really worked with the expr object before, because it seemed very hard to understand and use. So how can I translate;
+$$
+R = \sqrt{\frac {Lh}{\pi}+r^2}
+$$
+Into a C-like language that Max's expr object could understand?
+
+```
+[expr] sqrt(($f1*$f2/$f3)+$f4) = sqrt((L*h/pi)+r^2) = sqrt((732*0,000032/pi)+0,025)
+```
+
+I used then used gen~ in order to get PI, and the pow object in order to get the inner radius to the 2th power. 
+
+![](./media/max-math.png)
+
+<details>
+  <summary>Max expr for outer radius</summary>
+<pre><code>
+----------begin_max5_patcher----------
+1282.3ocyXE0ihaCD9Y3WQTz8vtsTZrSBApTenOdRmTO0WuqEYHFv2ErSic1
+cud59u2w1IgDHgM.gqckH6tyL1i+FOyWlguNdj6JwKToqyu37AmQi953QiLh
+zBFU7+ib2SdYcBQZLykSeVr5StSrpTzWTFwIBR7dpT53M0CGVplmumwSnJyR
+QEBSIp06X7sKynqUVW6GrXpe8ePASbvKl5MwYgu9IFO0y4OOrqhb0wa6NVbL
+kWWh0H0WRoVu35VsErXyoFPxOg8wtZgea7X8iI2dbXEgu8Ri.3Y3ogkXNb9v
+gYygocbiFXbWd+C+3ewo.H+NSAPn6eNf28HVDAoVWZkfmApFbO+tCa7hqA1q
+E62S4pSvc1eUA2zLpDLgnXB9xDFmtVjyMVguz.hukFv7DGZd50YDw6TPt.Oj
+X78uc3gXQsOxCUhtKFingDi6t3Z24yNs1s.NnEWAb7FR37tKFN5RNM.vWK.l
+eU0UaRDvNWdZ2Hx1SLmnYWWICBpVfzpPuWgEA2Imwjy75i4QUEBjLxdphlsj
+xIqRLq1a3XSSEO6zNMJ90CAgQ5eEf5IQ5Ig.3JQeGzF9CGxbz2rA47qNuS+g
+x2p14H13.1wxnNJRJ0QvcjoBQhyClH8iej+lMXv5cvG0N15Oy0uuAVjw5ZF4
+CF792p+q.3u.FZ8S3CiKYwTmLRLK2rvi19OxgXAX2e.e98b04LtDLM3.uzb1
+.jsXCYa8IZl4EfQWTQWv0birJWoD7qrcMDNxz0Vf4PGb44WcWdgG5xqghcoD
+5KLEUQ36C6h22I1kszq9tObQQqZgCM2Rzb25tmlUfqBfA2drD5SzLIz5QMWL
+xkjlVS7nZKQGM9jvrQymTIhwshPUhxnOwJW+rJojLHHnfHPdl4z69xr.2Cai
+HllwyYlcxJDtWJNRla.NbEJSIqsKNVlN8PbW6yxP67.6KtLj.ysOCODYg63s
+Ih0elFWiB.hroTNiWuerFpioaH4IpkaDbfG6eLmACaSK52TbFaUoFEF.7aYL
+RR0weaFKVv0GhF2EZwktC5oHz99n5fwXAmj1xhgr.HnzgRI.xb4JRl9ppnj.
+WpTALyMUUstD5FUg5TFmeTTTIR6VYFa6tyr1UBP49ys2FMxk4bq1kPVgZoj7
+TynshjjTTn1b6egvY.eEUwrWAXuJkVZgcx0YhjjF30p4oVzDCY4qoOyhU6LN
+pdx.XNKsLIxs5VNlskJUMkoHakMkHUewFzqIJeUQU7REceZBfhlF.0GLoRtS
+7rrvvxDs5AfCeKM0qpqy50P94X+Np+JVcwMHA8ponMhPbYNcUWx0nA6lJ7Ul
+P8X1PaiViJo7KnWF9.gtgGTmwBTehEAl1M8C6QrvqcvFzFXOPYn6wpiDAygR
+qu8nfTjmstLVaCqSbZd.gbeEiWQf9gxSjwtVOViOH4+ntQZezSaaYQ2mIehh
+9+ZqYHjW46O0C9ceZMKZ12oVynujl4H+6L0CO.iG8Cv.O+LLOyiN+nCLLyis
+10VvqFav91YAClesiD1dPwu9rGFKZVqZiCGWiVDMNo1T+cRWq5riJS8H30Lp
+12BXqWB824n93b7cx4d8v4Q2IjiWzGmO6t37itM6HpGdfM958TXePoOXj+s5
+Iu95I7M5onn95Izs5oY80S278TeHAzyJdydpbSNetm2IdxRzczTmZmbzzlGM
+o4oSY18DlGOcoYxx1lpT+Nlwea7+B17unHA
+-----------end_max5_patcher-----------
+</code></pre>
+
+## Source
+
+- http://datagenetics.com/blog/march12018/index.html
+
 
 
