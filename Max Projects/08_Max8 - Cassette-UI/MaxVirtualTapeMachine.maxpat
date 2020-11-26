@@ -12,7 +12,7 @@
 		"classnamespace" : "box",
 		"rect" : [ 77.0, 78.0, 1001.0, 788.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -39,6 +39,54 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 533.75, 37.0, 83.0, 22.0 ],
+					"text" : "loadmess 707"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 609.5, 13.0, 83.0, 22.0 ],
+					"text" : "loadmess 658"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 193.0, 21.0, 83.0, 22.0 ],
+					"text" : "loadmess 658"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 67.0, 30.0, 83.0, 22.0 ],
+					"text" : "loadmess 482"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-353",
 					"linecount" : 6,
@@ -1103,7 +1151,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1547.5, 716.0, 55.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "rotation speed"
 				}
 
@@ -1364,7 +1411,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 1496.5, 308.0, 63.0, 22.0 ],
-					"text" : "metro 500"
+					"text" : "metro 200"
 				}
 
 			}
@@ -1605,7 +1652,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1450.0, 181.0, 276.0, 87.0 ],
-					"presentation_linecount" : 6,
 					"text" : "$f1 = L = Length of entire tape on spool (meter)\n$f2 = h = thickness of tape (meter)\n$f3 = PI\n$f4 = r^2 = r = inside radius of spool (meter)\n\nout = R = Outside radius of spool (meter)"
 				}
 
@@ -1904,7 +1950,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 419.0, 236.0, 186.0, 22.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 407.0, 583.0, 151.091912334602256, 151.091912334602256 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -2199,7 +2245,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 858.0, 236.0, 186.0, 22.0 ],
-					"restore" : [ 606.0, 555.0, 205.683926054690716, 205.683926054690716 ],
+					"restore" : [ 593.0, 544.0, 229.326700008864464, 229.326700008864464 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -2370,9 +2416,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 606.0, 555.0, 205.683926054690716, 205.683926054690716 ],
+					"patching_rect" : [ 593.0, 544.0, 229.326700008864464, 229.326700008864464 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 606.0, 555.0, 205.683926054690716, 205.683926054690716 ],
+					"presentation_rect" : [ 593.0, 544.0, 229.326700008864464, 229.326700008864464 ],
 					"proportion" : 0.5,
 					"shape" : 1,
 					"varname" : "foo1"
@@ -2388,9 +2434,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 388.0, 565.0, 184.354265709473594, 184.354265709473594 ],
+					"patching_rect" : [ 407.0, 583.0, 151.091912334602256, 151.091912334602256 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 388.0, 565.0, 184.354265709473594, 184.354265709473594 ],
+					"presentation_rect" : [ 407.0, 583.0, 151.091912334602256, 151.091912334602256 ],
 					"proportion" : 0.5,
 					"shape" : 1,
 					"varname" : "foo2"
@@ -2433,6 +2479,13 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-155", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"hidden" : 1,
@@ -2834,6 +2887,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-220", 0 ],
 					"source" : [ "obj-199", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-154", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -3330,6 +3390,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"order" : 2,
 					"source" : [ "obj-30", 0 ]
@@ -3507,6 +3574,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-72", 0 ],
 					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
