@@ -30,5 +30,5 @@ This repository is split into two sub sections. The Max Archive acts as a folder
 ![](https://github.com/L4COUR/L4COUR_Max-Patchers/raw/master/Max%20Projects/07_Max4Live%20-%20ORCA%20Mod%20Tracker/media/ORCA-Mod-Tracker.gif)
 
 - [08 Max8 - Cassette UI](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects/08_Max8%20-%20Cassette-UI)
-![]()
+![](https://github.com/L4COUR/L4COUR_Max-Patchers/raw/master/Max%20Projects/08_Max8%20-%20Cassette-UI/media/cassette.png)
 
