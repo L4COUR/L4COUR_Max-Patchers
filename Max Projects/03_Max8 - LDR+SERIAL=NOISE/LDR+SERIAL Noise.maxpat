@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 71.0, 78.0, 1201.0, 770.0 ],
+		"rect" : [ -1798.0, -224.0, 1201.0, 770.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 527.0, 80.0, 150.0, 20.0 ],
+					"patching_rect" : [ 542.0, 95.0, 150.0, 20.0 ],
 					"text" : "Data-behandling"
 				}
 
@@ -55,7 +55,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 99.0, 92.0, 150.0, 20.0 ],
+					"patching_rect" : [ 114.0, 107.0, 150.0, 20.0 ],
 					"text" : "Arduino settings"
 				}
 
@@ -67,7 +67,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 124.0, 264.0, 100.0, 33.0 ],
+					"patching_rect" : [ 139.0, 279.0, 100.0, 33.0 ],
+					"presentation_linecount" : 2,
 					"text" : "modificering af det lydlige udtryk"
 				}
 
@@ -79,7 +80,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 287.0, 567.0, 75.0, 47.0 ],
+					"patching_rect" : [ 302.0, 582.0, 79.0, 47.0 ],
+					"presentation_linecount" : 3,
 					"text" : "lydligt udtryk gennem syntese"
 				}
 
@@ -92,7 +94,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 90.0, 51.0, 298.0, 22.0 ]
+					"patching_rect" : [ 105.0, 66.0, 298.0, 22.0 ]
 				}
 
 			}
@@ -103,7 +105,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 549.0, 472.0, 540.0, 154.0 ],
+					"patching_rect" : [ 564.0, 487.0, 540.0, 154.0 ],
+					"presentation_linecount" : 11,
 					"text" : "int sensorPin = A0; // select the input pin for LDR \nint sensorValue = 0; // variable to store the value coming from the sensor\n \nvoid setup() { \n    Serial.begin(9600); //sets serial port for    communication \n} \nvoid loop() { \n    sensorValue = analogRead(sensorPin); // read the     value from the sensor \n    Serial.println(sensorValue); //prints the values   coming from the sensor on the screen \ndelay(10); \n} "
 				}
 
@@ -115,7 +118,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 606.0, 409.5, 310.0, 40.0 ],
+					"patching_rect" : [ 621.0, 424.5, 310.0, 40.0 ],
 					"text" : "LDR+SERIAL NOISE",
 					"textcolor" : [ 0.349019607843137, 0.341176470588235, 0.341176470588235, 1.0 ]
 				}
@@ -130,7 +133,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 45.0, 616.0, 22.0, 140.0 ]
+					"patching_rect" : [ 60.0, 631.0, 22.0, 140.0 ]
 				}
 
 			}
@@ -141,7 +144,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 310.0, 472.0, 37.0, 22.0 ],
+					"patching_rect" : [ 325.0, 487.0, 37.0, 22.0 ],
 					"text" : "saw~"
 				}
 
@@ -153,7 +156,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 259.0, 529.0, 29.5, 22.0 ],
+					"patching_rect" : [ 274.0, 544.0, 29.5, 22.0 ],
 					"text" : "/~ 2"
 				}
 
@@ -165,7 +168,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 259.0, 427.5, 40.0, 22.0 ],
+					"patching_rect" : [ 274.0, 442.5, 40.0, 22.0 ],
 					"text" : "tri~"
 				}
 
@@ -179,7 +182,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 17.0, 331.0, 50.0, 22.0 ]
+					"patching_rect" : [ 32.0, 346.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -190,7 +193,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 17.0, 240.0, 103.0, 22.0 ],
+					"patching_rect" : [ 32.0, 255.0, 103.0, 22.0 ],
 					"text" : "scale 0 10 0 3000"
 				}
 
@@ -202,7 +205,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 17.0, 290.0, 103.0, 22.0 ],
+					"patching_rect" : [ 32.0, 305.0, 103.0, 22.0 ],
 					"text" : "yafr2"
 				}
 
@@ -214,7 +217,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 549.0, 342.0, 103.0, 22.0 ],
+					"patching_rect" : [ 564.0, 357.0, 103.0, 22.0 ],
 					"text" : "scale 0 10 36 100"
 				}
 
@@ -227,7 +230,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 549.0, 398.0, 540.0, 63.0 ],
+					"patching_rect" : [ 564.0, 413.0, 540.0, 63.0 ],
 					"size" : 1000.0
 				}
 
@@ -239,7 +242,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 235.0, 598.0, 43.0, 22.0 ],
+					"patching_rect" : [ 250.0, 613.0, 43.0, 22.0 ],
 					"text" : "cycle~"
 				}
 
@@ -253,7 +256,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 13.5, 616.0, 22.0, 140.0 ]
+					"patching_rect" : [ 28.5, 631.0, 22.0, 140.0 ]
 				}
 
 			}
@@ -263,7 +266,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.5, 766.0, 45.0, 45.0 ]
+					"patching_rect" : [ 28.5, 781.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -273,7 +276,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 726.0, 240.0, 150.0, 20.0 ],
+					"patching_rect" : [ 741.0, 255.0, 150.0, 20.0 ],
 					"text" : "Integer from symbol"
 				}
 
@@ -285,8 +288,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 648.5, 240.0, 61.0, 22.0 ],
-					"text" : "97"
+					"patching_rect" : [ 663.5, 255.0, 61.0, 22.0 ],
+					"text" : "14"
 				}
 
 			}
@@ -297,7 +300,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 549.0, 240.0, 71.0, 22.0 ],
+					"patching_rect" : [ 564.0, 255.0, 71.0, 22.0 ],
 					"text" : "fromsymbol"
 				}
 
@@ -308,7 +311,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 726.0, 187.0, 150.0, 20.0 ],
+					"patching_rect" : [ 741.0, 202.0, 150.0, 20.0 ],
 					"text" : "Symbol of ASCII code"
 				}
 
@@ -320,8 +323,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 648.5, 187.0, 61.0, 22.0 ],
-					"text" : "\"97\""
+					"patching_rect" : [ 663.5, 202.0, 61.0, 22.0 ],
+					"text" : "\"14\""
 				}
 
 			}
@@ -332,7 +335,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 549.0, 187.0, 40.0, 22.0 ],
+					"patching_rect" : [ 564.0, 202.0, 40.0, 22.0 ],
 					"text" : "itoa"
 				}
 
@@ -343,7 +346,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 726.0, 146.0, 150.0, 20.0 ],
+					"patching_rect" : [ 741.0, 161.0, 150.0, 20.0 ],
 					"text" : "ASCII List"
 				}
 
@@ -355,8 +358,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 648.5, 146.0, 61.0, 22.0 ],
-					"text" : "57 55"
+					"patching_rect" : [ 663.5, 161.0, 61.0, 22.0 ],
+					"text" : "49 52"
 				}
 
 			}
@@ -367,7 +370,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 549.0, 146.0, 81.0, 22.0 ],
+					"patching_rect" : [ 564.0, 161.0, 81.0, 22.0 ],
 					"text" : "zl group 1000"
 				}
 
@@ -379,7 +382,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 527.0, 110.0, 57.0, 22.0 ],
+					"patching_rect" : [ 542.0, 125.0, 57.0, 22.0 ],
 					"text" : "sel 13 10"
 				}
 
@@ -392,7 +395,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 17.0, 19.0, 24.0, 24.0 ]
+					"patching_rect" : [ 32.0, 34.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -403,7 +406,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 17.0, 51.0, 56.0, 22.0 ],
+					"patching_rect" : [ 32.0, 66.0, 56.0, 22.0 ],
 					"text" : "metro 33"
 				}
 
@@ -415,7 +418,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 17.0, 92.0, 77.0, 22.0 ],
+					"patching_rect" : [ 32.0, 107.0, 77.0, 22.0 ],
 					"text" : "serial p 9600"
 				}
 
@@ -445,7 +448,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 1 ],
-					"midpoints" : [ 558.5, 171.0, 645.0, 171.0, 645.0, 132.0, 700.0, 132.0 ],
+					"midpoints" : [ 573.5, 186.0, 660.0, 186.0, 660.0, 147.0, 715.0, 147.0 ],
 					"order" : 0,
 					"source" : [ "obj-13", 0 ]
 				}
@@ -462,7 +465,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-20", 1 ],
-					"midpoints" : [ 558.5, 219.0, 633.0, 219.0, 633.0, 183.0, 700.0, 183.0 ],
+					"midpoints" : [ 573.5, 234.0, 648.0, 234.0, 648.0, 198.0, 715.0, 198.0 ],
 					"order" : 0,
 					"source" : [ "obj-18", 0 ]
 				}
@@ -479,7 +482,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-26", 1 ],
-					"midpoints" : [ 558.5, 273.0, 633.0, 273.0, 633.0, 225.0, 700.0, 225.0 ],
+					"midpoints" : [ 573.5, 288.0, 648.0, 288.0, 648.0, 240.0, 715.0, 240.0 ],
 					"order" : 0,
 					"source" : [ "obj-24", 0 ]
 				}

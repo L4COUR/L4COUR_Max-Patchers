@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 0,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,7 +37,32 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"attr" : "baud",
+					"id" : "obj-5",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 153.99999988079071, 78.0, 152.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "serport",
+					"id" : "obj-3",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 153.99999988079071, 45.0, 302.0, 22.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"autofit" : 1,
 					"forceaspect" : 1,
@@ -46,7 +71,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 489.0, 247.666664123535156, 274.0, 195.373913043478268 ],
+					"patching_rect" : [ 658.0, 566.333337426185608, 274.0, 195.373913043478268 ],
 					"pic" : "/Users/Pacour/Desktop/Screen Shot 2019-10-25 at 13.29.19.png"
 				}
 
@@ -59,7 +84,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 222.99999988079071, 74.853620883692884, 350.0, 389.0 ],
+					"patching_rect" : [ 466.99999988079071, 69.853620883692884, 350.0, 389.0 ],
 					"text" : "/*\n * PIR sensor tester\n */\n \nint ledPin = 13;                // choose the pin for the LED\nint inputPin = 2;               // choose the input pin (for PIR sensor)\nint pirState = LOW;             // we start, assuming no motion detected\nint val = 0;                    // variable for reading the pin status\n \nvoid setup() {\n  pinMode(ledPin, OUTPUT);      // declare LED as output\n  pinMode(inputPin, INPUT);     // declare sensor as input\n \n  Serial.begin(9600);\n}\n \nvoid loop(){\n  val = digitalRead(inputPin);  // read input value\n  if (val == HIGH) {            // check if the input is HIGH\n    digitalWrite(ledPin, HIGH);  // turn LED ON\n    if (pirState == LOW) {\n      // we have just turned on\n      Serial.println(\"On\");\n      \n      // We only want to print on the output change, not state\n      pirState = HIGH;\n    }\n  } else {\n    digitalWrite(ledPin, LOW); // turn LED OFF\n    if (pirState == HIGH){\n      // we have just turned of\n      Serial.println(\"Off\");\n      \n      // We only want to print on the output change, not state\n      pirState = LOW;\n    }\n  }\n}"
 				}
 
@@ -673,6 +698,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
 					"source" : [ "obj-30", 0 ]
 				}
@@ -768,6 +800,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-46", 0 ],
 					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -912,13 +951,6 @@
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
 				"patcherrelativepath" : "../../../../Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Screen Shot 2019-10-25 at 13.29.19.png",
-				"bootpath" : "~/Desktop",
-				"patcherrelativepath" : "../../../../Desktop",
-				"type" : "PNG",
 				"implicit" : 1
 			}
  ],
