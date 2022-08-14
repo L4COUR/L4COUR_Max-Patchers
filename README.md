@@ -32,3 +32,11 @@ This repository is split into two sub sections. The Max Archive acts as a folder
 - [08 Max8 - Cassette UI](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects/08_Max8%20-%20Cassette-UI)
 ![](https://github.com/L4COUR/L4COUR_Max-Patchers/raw/master/Max%20Projects/08_Max8%20-%20Cassette-UI/media/cassette.png)
 
+- [09 Max8 - Transduo (arduino+preamp)](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects/09_Max8%20-%20Transduo%20(Arduino%2Bpreamp))
+![](https://github.com/L4COUR/L4COUR_Max-Patchers/raw/master/Max%20Projects/09_Max8%20-%20Transduo%20(Arduino%2Bpreamp)/opg9_laCour_Transduo/media/opg9_schematic.png)
+
+- [10 Max8 - Speed of Sound](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects/10_Max8%20-%20Speed-of-Sound)
+![](https://github.com/L4COUR/L4COUR_Max-Patchers/raw/master/Max%20Projects/10_Max8%20-%20Speed-of-Sound/media/speedofsound.png)
+
+- [11 Max4Live - Literal Pong](https://github.com/L4COUR/L4COUR_Max-Patchers/tree/master/Max%20Projects/11_Max4Live%20-%20Literal%20PingPong)
+![](https://github.com/L4COUR/L4COUR_Max-Patchers/raw/master/Max%20Projects/11_Max4Live%20-%20Literal%20PingPong/media/LiteralPong.png)
